@@ -1,9 +1,21 @@
 const Express = require("express");
+const mongoose = require("mongoose");
 const app = Express();
 const http = require("http");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
+
+const PORT = 3000;
+//MongoDB URL
+const URL = require("../conf.json").MongoURL;
+const Options = require("../conf.json").MongoOpt;
+
+//mongose connection
+mongoose
+  .connect(URL, Options)
+  .then(() => console.log(`mongoose conected to Data Base...`))
+  .catch((err) => console.log(err));
 
 io.on("connection", (socket) => {
   console.log("a user connected");
@@ -16,6 +28,6 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3000, () => {
-  console.log("listening on *:3000");
+server.listen(PORT, () => {
+  console.log(`listening on ${PORT} . . .`);
 });
