@@ -1,15 +1,19 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const passport = require("passport");
+const multipart = require("multer");
+const upload = multipart();
 const User = require("../models/User");
 const router = express.Router();
 const { ensureAuthenticated } = require("../config/Auth");
 
-router.post("/register", (req, res) => {
-  const { Username, Password } = req.body;
-
+router.post("/register", upload.single("Avatar"), (req, res) => {
+  console.log(req.file);
+  console.log(req.body);
+  const { Username, Password, CPassword, Avatar, DeviceInfo } = req.body;
+  deviceInfo = DeviceInfo ? DeviceInfo : "";
+  avatar = req.file ? req.file.buffer : Buffer.alloc(0);
   const errors = [];
-  const warning = [];
   if (!Username || !Password || !CPassword) {
     errors.push({ massage: "please fill in all the required fields !" });
   }
@@ -28,7 +32,7 @@ router.post("/register", (req, res) => {
       CPassword,
     });
   } else {
-    User.findOne({ $or: [{ Password: Password }, { Username: Username }] }).then((user) => {
+    User.findOne({ Username: Username }).then((user) => {
       if (user) {
         errors.push({ massage: "This Username is taken, try another one!" });
         res.send({
@@ -41,6 +45,8 @@ router.post("/register", (req, res) => {
         const NewUser = new User({
           Username,
           Password,
+          Avatar: avatar,
+          DeviceInfo: deviceInfo,
         });
         bcrypt
           .genSalt(15)

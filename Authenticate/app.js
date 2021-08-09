@@ -1,7 +1,6 @@
 const express = require("express");
 const mongose = require("mongoose");
 const session = require("express-session");
-const path = require("path");
 const passport = require("passport");
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -19,6 +18,8 @@ mongose
 
 //Body Parser
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 
 //Express session
 app.use(

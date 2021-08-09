@@ -8,6 +8,19 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  Avatar: {
+    type: Buffer,
+    required: false,
+  },
+  Curency: {
+    type: Number,
+    required: true,
+    default: 100,
+  },
+  DeviceInfo: {
+    type: String,
+    required: false,
+  },
 });
 
 const User = mongoose.model("User", UserSchema);

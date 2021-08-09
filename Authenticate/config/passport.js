@@ -9,14 +9,14 @@ module.exports = (passport) => {
       User.findOne({ Username: Username })
         .then((user) => {
           if (!user) {
-            return done(null, false, { massage: "Username or Password is not correct !" });
+            return done(null, false, { message: "Username or Password is not correct !" });
           }
           bcrypt.compare(Password, user.Password, (err, IsMatch) => {
             if (err) throw err;
             if (IsMatch) {
               return done(null, user);
             } else {
-              return done(null, false, { massage: "Username or Password is not correct !" });
+              return done(null, false, { message: "Username or Password is not correct !" });
             }
           });
         })

@@ -13,9 +13,13 @@
     "express-session": "latest",
     "jalali-date": "latest",
     "mongoose": "latest",
+    "multer": "^1.4.2",
     "passport": "latest",
     "passport-local": "latest"
   },
   "author": "mohamad nosratian",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
