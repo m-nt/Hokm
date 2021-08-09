@@ -10,7 +10,6 @@ const PORT = 3000;
 //MongoDB URL
 const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
-
 //mongose connection
 mongoose
   .connect(URL, Options)

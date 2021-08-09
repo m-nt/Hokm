@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "socket.io": "latest",
+    "connect-flash": "latest",
+    "express": "latest",
+    "jalali-date": "latest",
+    "mongoose": "latest"
+  },
+  "author": "mohamad nosratian",
+  "license": "ISC"
+}
