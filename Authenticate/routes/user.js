@@ -70,7 +70,7 @@ router.post("/register", upload.single("Avatar"), (req, res) => {
 });
 
 router.post("/loggin", ensureAuthenticated, passport.authenticate("local"), (req, res) => {
-  res.send({ message: "You are logged in !", code: "ok" });
+  res.send({ message: "You are logged in !", code: "ok", user: req.user });
 });
 router.post("/loggout", (req, res) => {
   req.logout();
