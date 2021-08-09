@@ -15,13 +15,13 @@ router.post("/register", upload.single("Avatar"), (req, res) => {
   avatar = req.file ? req.file.buffer : Buffer.alloc(0);
   const errors = [];
   if (!Username || !Password || !CPassword) {
-    errors.push({ massage: "please fill in all the required fields !" });
+    errors.push({ message: "please fill in all the required fields !" });
   }
   if (Password != CPassword) {
-    errors.push({ massage: "Passwords doesn't match !" });
+    errors.push({ message: "Passwords doesn't match !" });
   }
   if (Password.length < 6) {
-    errors.push({ massage: "Password must be greater than 6 character !" });
+    errors.push({ message: "Password must be greater than 6 character !" });
   }
 
   if (errors.length > 0) {
@@ -34,7 +34,7 @@ router.post("/register", upload.single("Avatar"), (req, res) => {
   } else {
     User.findOne({ Username: Username }).then((user) => {
       if (user) {
-        errors.push({ massage: "This Username is taken, try another one!" });
+        errors.push({ message: "This Username is taken, try another one!" });
         res.send({
           errors,
           Username,
@@ -57,7 +57,7 @@ router.post("/register", upload.single("Avatar"), (req, res) => {
                 NewUser.Password = hash;
                 NewUser.save()
                   .then((user) => {
-                    res.send({ massage: "register successfully done" });
+                    res.send({ message: "register successfully done" });
                   })
                   .catch((err) => console.log(err));
               })
@@ -69,15 +69,12 @@ router.post("/register", upload.single("Avatar"), (req, res) => {
   }
 });
 
-router.post("/login", ensureAuthenticated, (req, res, next) => {
-  passport.authenticate("local", {
-    successRedirect: "/dashboard",
-    failureRedirect: "/users/lgrg?error=username or password is incorrect !",
-    failureFlash: false,
-  })(req, res, next);
+router.post("/loggin", ensureAuthenticated, passport.authenticate("local"), (req, res) => {
+  res.send({ message: "You are logged in !", code: "ok" });
 });
-router.get("/logout", (req, res) => {
+router.post("/loggout", (req, res) => {
   req.logout();
+  res.send({ message: "You are logged out !", code: "ok" });
 });
 
 module.exports = router;
