@@ -35,5 +35,6 @@ app.use(passport.session());
 
 //Routes set up
 app.use("/users", require("./routes/user"));
+app.use("/pay", require("./routes/pay"));
 
 app.listen(PORT, console.log(`app listening on port:${PORT}`));
