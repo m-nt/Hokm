@@ -1,5 +1,6 @@
 {
     "merchant_id":"Your zarinpal merchant id",
+    "callback_url":"return page after payment was seccussful",
     "MongoURL":"Your URI",
     "MongoOpt":{"useNewUrlParser": true,"useUnifiedTopology": true }
 }

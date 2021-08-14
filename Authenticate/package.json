@@ -7,6 +7,7 @@
     "test": "nodemon app"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "latest",
     "express": "latest",
     "express-http-proxy": "latest",

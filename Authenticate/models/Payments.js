@@ -3,30 +3,33 @@ const mongoose = require("mongoose");
 const PaySchema = mongoose.Schema({
   code: {
     type: Number,
-    require: true,
+    require: false,
+  },
+  amount: {
+    type: Number,
+    require: false,
   },
   ref_id: {
     type: Number,
-    require: true,
+    require: false,
   },
   card_pan: {
     type: String,
-    require: true,
+    require: false,
   },
   card_hash: {
     type: String,
-    require: true,
+    require: false,
   },
   fee_type: {
     type: String,
-    require: true,
+    require: false,
   },
   fee: {
     type: String,
-    require: true,
+    require: false,
   },
 });
 
-const Pay = mongoose.model("payes", PaySchema);
-
+const Pay = mongoose.model("Payes", PaySchema);
 module.exports = Pay;
