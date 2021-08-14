@@ -17,11 +17,6 @@ const UserSchema = new mongoose.Schema({
     required: true,
     default: 100,
   },
-  expire: {
-    type: Number,
-    require: true,
-    default: 0,
-  },
   DeviceInfo: {
     type: String,
     required: false,
