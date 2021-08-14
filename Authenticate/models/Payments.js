@@ -5,6 +5,10 @@ const PaySchema = mongoose.Schema({
     type: Number,
     require: false,
   },
+  user: {
+    type: String,
+    require: true,
+  },
   amount: {
     type: Number,
     require: false,

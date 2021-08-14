@@ -4,6 +4,7 @@ const axios = require("axios").default;
 const { merchant_id, callback_url, metadata } = require("../../conf.json");
 const Pay = require("../models/Payments");
 const { IsAuthenticated } = require("../config/Auth");
+const User = require("../models/User");
 
 router.post("/init", IsAuthenticated, (req, res) => {
   const { amount, description } = req.body;
@@ -11,6 +12,7 @@ router.post("/init", IsAuthenticated, (req, res) => {
   if (!amount || !description) {
     res.send({ message: "amount or description of payment is not set !", code: "nok" });
   }
+  console.log(typeof req.user._id);
   var payment_id = "";
   const paym = new Pay({ amount: amount });
   paym.save().then((payment) => {
