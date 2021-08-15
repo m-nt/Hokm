@@ -5,7 +5,7 @@ const multipart = require("multer");
 const upload = multipart();
 const User = require("../models/User");
 const router = express.Router();
-const { ensureAuthenticated } = require("../config/Auth");
+const { ensureAuthenticated, IsAuthenticated } = require("../config/Auth");
 
 router.post("/register", upload.single("Avatar"), (req, res) => {
   console.log(req.file);
@@ -76,5 +76,13 @@ router.post("/loggout", (req, res) => {
   req.logout();
   res.send({ message: "You are logged out !", code: "ok" });
 });
-
+router.post("/leaderboard", IsAuthenticated, (req, res) => {
+  User.find({})
+    .sort({ Currency: 1 })
+    .limit(req.body.limit ? req.body.limit : 30)
+    .toArray((err, result) => {
+      if (err) res.send({ message: "failed to retrieve players !", code: "nok" });
+      res.send({ message: result, code: "ok" });
+    });
+});
 module.exports = router;

@@ -36,9 +36,9 @@ router.post("/init", IsAuthenticated, (req, res) => {
 router.get("/callback", (req, res) => {
   Authority = req.query.Authority;
   Status = req.query.Status;
-  if (Status === "OK") {
+  if (Status === "ok") {
     res.send("Payment Seccussful");
-  } else if (Status === "NOK") {
+  } else if (Status === "nok") {
     res.send("Payment Failed");
   } else {
     res.send("Unkown result");
