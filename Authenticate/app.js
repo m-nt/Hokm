@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 8080;
 const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
 const VIP = require("./models/vipticket");
+const DEL_VIP = require("./models/deletedvip");
 //passport config
 require("./config/passport")(passport);
 //mongose connection
@@ -41,9 +42,14 @@ app.use("/pay", require("./routes/pay"));
 setInterval(() => {
   VIP.findOneAndDelete({ expires: { $lt: Date.now() } }).then((vip) => {
     if (vip) {
-      console.log(`delete a vip: ${vip}`);
+      const del_vip = new DEL_VIP({
+        name: vip.name,
+        user_pk: vip.user_pk,
+        expires: vip.expires,
+      });
+      del_vip.save();
     }
   });
-}, 1000 * 60 * 2);
+}, 1000);
 
 app.listen(PORT, console.log(`app listening on port:${PORT}`));

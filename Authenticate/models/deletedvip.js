@@ -15,9 +15,9 @@ const vIP = new moongose.Schema({
   },
 });
 
-const VIP = moongose.model("VIP", vIP);
+const DEL_VIP = moongose.model("DELETED_VIP", vIP);
 // const VIP_2_month = moongose.model("VIP2", vIP_2_month);
 // const VIP_3_month = moongose.model("VIP3", vIP_3_month);
 
 // module.exports = { VIP_1_month, VIP_2_month, VIP_3_month };
-module.exports = VIP;
+module.exports = DEL_VIP;
