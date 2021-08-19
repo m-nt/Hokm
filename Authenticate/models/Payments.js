@@ -5,9 +5,9 @@ const PaySchema = mongoose.Schema({
     type: Number,
     require: false,
   },
-  user: {
-    type: String,
-    require: true,
+  user_pk: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
   },
   amount: {
     type: Number,

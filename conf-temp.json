@@ -1,6 +1,11 @@
 {
-    "merchant_id":"Your zarinpal merchant id",
-    "callback_url":"return page after payment was seccussful",
-    "MongoURL":"Your URI",
-    "MongoOpt":{"useNewUrlParser": true,"useUnifiedTopology": true }
+    "merchant_id":"<vendor zarinpal merchant id>",
+    "callback_url":"<return page after payment was seccussful.",
+    "metadata":{"mobile":"<vendor phone number>","email":"<vendor email>"},
+    "MongoURL":"<Your URI>",
+    "MongoOpt":{"useNewUrlParser": true,"useUnifiedTopology": true },
+    "PaymentURLs":{
+        "request":"<reuest payment link>",
+        "verify":"<verify payment link>"
+    }
 }

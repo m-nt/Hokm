@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 //MongoDB URL
 const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
-
+const VIP = require("./models/vipticket");
 //passport config
 require("./config/passport")(passport);
 //mongose connection
@@ -36,5 +36,14 @@ app.use(passport.session());
 //Routes set up
 app.use("/users", require("./routes/user"));
 app.use("/pay", require("./routes/pay"));
+
+// every two minutes check for vip expire time
+setInterval(() => {
+  VIP.findOneAndDelete({ expires: { $lt: Date.now() } }).then((vip) => {
+    if (vip) {
+      console.log(`delete a vip: ${vip}`);
+    }
+  });
+}, 1000 * 60 * 2);
 
 app.listen(PORT, console.log(`app listening on port:${PORT}`));
