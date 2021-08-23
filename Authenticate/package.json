@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "latest",
+    "cors": "^2.8.5",
     "express": "latest",
     "express-http-proxy": "latest",
     "express-session": "latest",

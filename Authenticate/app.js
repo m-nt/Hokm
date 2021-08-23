@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const mongose = require("mongoose");
 const session = require("express-session");
 const passport = require("passport");
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
 
+app.use(cors());
 //Express session
 app.use(
   session({
@@ -31,6 +33,7 @@ app.use(
   })
 );
 //passport midware
+app.use(express.static("../Static"));
 app.use(passport.initialize());
 app.use(passport.session());
 

@@ -11,6 +11,7 @@ const PORT = 3000;
 const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
 //mongose connection
+app.use(Express.static("../Static"));
 mongoose
   .connect(URL, Options)
   .then(() => console.log(`mongoose conected to Data Base...`))

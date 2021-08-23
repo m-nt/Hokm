@@ -3,7 +3,7 @@
     "callback_url":"<return page after payment was seccussful.",
     "metadata":{"mobile":"<vendor phone number>","email":"<vendor email>"},
     "MongoURL":"<Your URI>",
-    "MongoOpt":{"useNewUrlParser": true,"useUnifiedTopology": true },
+    "MongoOpt":{"useNewUrlParser": true,"useUnifiedTopology": true,"useFindAndModify":true },
     "PaymentURLs":{
         "request":"<reuest payment link>",
         "verify":"<verify payment link>"

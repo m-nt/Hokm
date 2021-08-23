@@ -21,6 +21,16 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  DeckOfCard: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  Background: {
+    type: Number,
+    required: true,
+    default: 404,
+  },
 });
 
 const User = mongoose.model("User", UserSchema);
