@@ -15,5 +15,8 @@
     "mongoose": "latest"
   },
   "author": "mohamad nosratian",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
