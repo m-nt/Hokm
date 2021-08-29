@@ -4,4 +4,7 @@ module.exports = class User {
     this.id = id;
     this.number = null;
   }
+  getUserJson() {
+    return { name: this.name, id: this.id, number: this.number };
+  }
 };
