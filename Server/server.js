@@ -25,10 +25,10 @@ io.on("connection", (socket) => {
   //console.log("a user connected");
   socket.on("init", (data) => {});
   socket.on("ready", (data) => {
-    const user = new User(data.name, socket.id);
-
+    const user = new User(data.name, data.id, socket.id);
     matchM.PlayerReady(user, socket);
   });
+
   socket.on("disconnect", () => {
     console.log("user disconnected");
   });

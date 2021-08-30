@@ -10,9 +10,16 @@ module.exports = class Game {
       let player = _player;
       player.number = length;
       this.players[player.number] = player;
-      return true;
+      return player;
     } else {
-      return false;
+      return null;
     }
+  }
+  playersJson() {
+    result = [];
+    Object.entries(this.players).forEach((key, /** @type {User} */ user) => {
+      result.push(user.getUserJson());
+    });
+    return result;
   }
 };

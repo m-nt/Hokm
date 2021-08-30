@@ -11,25 +11,33 @@ module.exports = class MatchManager {
 
   PlayerReady(/** @type {User} */ player, /** @type {Socket} */ socket) {
     if (this.findSpot(player, socket)) {
+      console.log(this.games);
+      console.log(this.rooms);
     } else {
       this.MakeAMatch(player, socket);
+      console.log(this.games);
+      console.log(this.rooms);
     }
   }
   MakeAMatch(/** @type {User} */ player, /** @type {Socket} */ socket) {
     let game = new Game();
-    let g = game.addPlayer(player);
+    let plyr = game.addPlayer(player);
     let roomName = RandomAlphabet(10, true, true, true);
     this.games[roomName] = game;
+    this.rooms[plyr.id] = key[0];
     socket.join(roomName);
-    socket.to(roomName).emit("playerjoined", /** @type {User} */ (game.players[player.number]).getUserJson());
+    socket.emit("imjoined", { users: game.playersJson() });
+    socket.to(roomName).emit("playerjoined", /** @type {User} */ plyr.getUserJson());
   }
 
   findSpot(/** @type {User} */ player, /** @type {Socket} */ socket) {
     Object.entries(games).forEach((key, /** @type {Game} */ game) => {
-      if (game.addPlayer(player)) {
-        this.rooms[player.id] = key[0];
+      let plyr = game.addPlayer(player);
+      if (plyr) {
+        this.rooms[plyr.id] = key[0];
         socket.join(key[0]);
-        socket.to(key[0]).emit("playerjoined", /** @type {User} */ (game.players[player.number]).getUserJson());
+        socket.emit("imjoined", /** @type {User} */ { users: game.playersJson() });
+        socket.to(key[0]).emit("playerjoined", /** @type {User} */ plyr.getUserJson());
         return true;
       }
       return false;
