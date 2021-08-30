@@ -23,55 +23,67 @@ router.post("/register", upload.single("Avatar"), (req, res) => {
     return res.send({ message: "Password must be greater than 6 character !", code: "nok" });
   }
 
-  User.findOne({ Username: Username }).then((user) => {
-    if (user) {
-      res.send({ message: "This Username is taken, try another one!", code: "nok" });
-    } else {
-      const NewUser = new User({
-        Username,
-        Password,
-        Avatar: avatar,
-        DeviceInfo: deviceInfo,
-      });
-      bcrypt
-        .genSalt(15)
-        .then((salt) => {
-          bcrypt
-            .hash(NewUser.Password, salt)
-            .then((hash) => {
-              NewUser.Password = hash;
-              NewUser.save()
-                .then((_user) => {
-                  res.send({ message: "register successfully done", code: "ok", user: _user });
-                })
-                .catch((err) => console.log(err));
-            })
-            .catch((err) => console.log(err));
-        })
-        .catch((err) => console.log(err));
-    }
-  });
+  User.findOne({ Username: Username })
+    .then((user) => {
+      if (user) {
+        res.send({ message: "This Username is taken, try another one!", code: "nok" });
+      } else {
+        const NewUser = new User({
+          Username,
+          Password,
+          Avatar: avatar,
+          DeviceInfo: deviceInfo,
+        });
+        bcrypt
+          .genSalt(15)
+          .then((salt) => {
+            bcrypt
+              .hash(NewUser.Password, salt)
+              .then((hash) => {
+                NewUser.Password = hash;
+                NewUser.save()
+                  .then((_user) => {
+                    res.send({ message: "register successfully done", code: "ok", user: _user });
+                  })
+                  .catch((err) => console.log(err));
+              })
+              .catch((err) => console.log(err));
+          })
+          .catch((err) => console.log(err));
+      }
+    })
+    .catch((err) => {
+      res.send({ message: err.message, code: "nok" });
+    });
 });
 
 router.post("/loggin", upload.none(), passport.authenticate("local"), (req, res) => {
-  VIP.findOne({ user_pk: req.user._id }).then((_vip) => {
-    if (_vip) {
-      res.send({ message: "You are logged in !", code: "ok", user: req.user, vip: _vip });
-    } else {
-      res.send({ message: "You are logged in !", code: "ok", user: req.user });
-    }
-  });
+  VIP.findOne({ user_pk: req.user._id })
+    .then((_vip) => {
+      if (_vip) {
+        res.send({ message: "You are logged in !", code: "ok", user: req.user, vip: _vip });
+      } else {
+        res.send({ message: "You are logged in !", code: "ok", user: req.user });
+      }
+    })
+    .catch((err) => {
+      res.send({ message: err.message, code: "nok" });
+    });
 });
-router.post("/checkloggin", IsAuthenticated, (req, res) => {
-  VIP.findOne({ user_pk: req.user._id }).then((_vip) => {
-    if (_vip) {
-      res.send({ message: "You are logged in !", code: "ok", user: req.user, vip: _vip });
-    } else {
-      res.send({ message: "You are logged in !", code: "ok", user: req.user });
-    }
-  });
+router.post("/checkloggin", upload.none(), IsAuthenticated, (req, res) => {
+  VIP.findOne({ user_pk: req.user._id })
+    .then((_vip) => {
+      if (_vip) {
+        res.send({ message: "You are logged in !", code: "ok", user: req.user, vip: _vip });
+      } else {
+        res.send({ message: "You are logged in !", code: "ok", user: req.user });
+      }
+    })
+    .catch((err) => {
+      res.send({ message: err.message, code: "nok" });
+    });
 });
-router.post("/loggout", (req, res) => {
+router.post("/loggout", upload.none(), (req, res) => {
   req.logout();
   res.send({ message: "You are logged out !", code: "ok" });
 });
@@ -138,13 +150,17 @@ router.post("/updateuser", upload.single("Avatar"), IsAuthenticated, (req, res) 
           .then((user) => {
             User.findOne({ Username: name.length > 0 ? name : req.user.Username })
               .then((loser) => {
-                VIP.findOne({ user_pk: req.user._id }).then((_vip) => {
-                  if (_vip) {
-                    res.send({ message: "User seccussfully updated !", code: "ok", user: loser, vip: _vip });
-                  } else {
-                    res.send({ message: "User seccussfully updated !", code: "ok", user: loser });
-                  }
-                });
+                VIP.findOne({ user_pk: req.user._id })
+                  .then((_vip) => {
+                    if (_vip) {
+                      res.send({ message: "User seccussfully updated !", code: "ok", user: loser, vip: _vip });
+                    } else {
+                      res.send({ message: "User seccussfully updated !", code: "ok", user: loser });
+                    }
+                  })
+                  .catch((err) => {
+                    res.send({ message: err.message, code: "nok" });
+                  });
               })
               .catch((err) => {
                 res.send({ message: err.message, code: "nok" });
@@ -168,12 +184,32 @@ router.post("/updatecurency", upload.none(), IsAuthenticated, (req, res) => {
     });
   }
 });
-router.post("/verifyvip", IsAuthenticated, (req, res) => {
+router.post("/verifyvip", upload.none(), IsAuthenticated, (req, res) => {
   VIP.findOne({ user_pk: req.user._id }).then((vip) => {
     if (vip) {
       res.send({ message: "VIP founded for this user", code: "ok", vip: vip });
     } else {
       res.send({ message: "VIP NOT founded for this user", code: "nok" });
+    }
+  });
+});
+router.post("/getuserbyid", upload.none(), IsAuthenticated, (req, res) => {
+  let result = {};
+  if (!req.body.id) {
+    return res.send({ message: "id field is not set as value", code: "nok" });
+  }
+  VIP.findOne({ user_pk: req.body.id }).then((vip) => {
+    if (vip) {
+      result["VIP"] = vip.name;
+    }
+  });
+  User.findOne({ _id: req.body.id }, (user) => {
+    if (!user) {
+      res.send({ message: "user with this id doesnt exist", code: "nok" });
+    } else {
+      result["Curency"] = user.Curency;
+      result["Avatar"] = user.Avatar;
+      res.send({ message: "user seccussfuly find", code: "ok", user: result });
     }
   });
 });
