@@ -1,3 +1,4 @@
+const { Server } = require("socket.io");
 const { Socket } = require("socket.io");
 const User = require("../models/User");
 const Game = require("./game");
@@ -9,38 +10,45 @@ module.exports = class MatchManager {
     this.rooms = {};
   }
 
-  PlayerReady(/** @type {User} */ player, /** @type {Socket} */ socket) {
-    if (this.findSpot(player, socket)) {
+  PlayerReady(/** @type {User} */ player, /** @type {Server} */ io, /** @type {Socket} */ socket) {
+    if (this.findSpot(player, io, socket)) {
       console.log(this.games);
       console.log(this.rooms);
     } else {
-      this.MakeAMatch(player, socket);
+      this.MakeAMatch(player, io, socket);
       console.log(this.games);
       console.log(this.rooms);
     }
   }
-  MakeAMatch(/** @type {User} */ player, /** @type {Socket} */ socket) {
+  MakeAMatch(/** @type {User} */ player, /** @type {Server} */ io, /** @type {Socket} */ socket) {
+    console.log("make a match ...");
     let game = new Game();
     let plyr = game.addPlayer(player);
     let roomName = RandomAlphabet(10, true, true, true);
     this.games[roomName] = game;
-    this.rooms[plyr.id] = key[0];
+    this.rooms[player.id] = roomName;
     socket.join(roomName);
-    socket.emit("imjoined", { users: game.playersJson() });
-    socket.to(roomName).emit("playerjoined", /** @type {User} */ plyr.getUserJson());
+    io.to(roomName).emit("playersjoined", /** @type {User} */ { users: game.playersJson });
   }
 
-  findSpot(/** @type {User} */ player, /** @type {Socket} */ socket) {
-    Object.entries(games).forEach((key, /** @type {Game} */ game) => {
-      let plyr = game.addPlayer(player);
+  findSpot(/** @type {User} */ player, /** @type {Server} */ io, /** @type {Socket} */ socket) {
+    console.log("find an spot ...");
+    let res = false;
+    Object.entries(this.games).forEach((game, key) => {
+      let plyr = game[1].addPlayer(player);
+      let roomname = game[0];
       if (plyr) {
-        this.rooms[plyr.id] = key[0];
-        socket.join(key[0]);
-        socket.emit("imjoined", /** @type {User} */ { users: game.playersJson() });
-        socket.to(key[0]).emit("playerjoined", /** @type {User} */ plyr.getUserJson());
-        return true;
+        console.log("spot finded :)");
+        this.rooms[plyr.id] = roomname;
+        socket.join(roomname);
+        io.to(roomname).emit("playersjoined", /** @type {User} */ { users: game[1].playersJson });
+        res = true;
       }
-      return false;
     });
+    if (res) {
+      return true;
+    } else {
+      return false;
+    }
   }
 };

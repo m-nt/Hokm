@@ -43,16 +43,20 @@ app.use("/pay", require("./routes/pay"));
 
 // every two minutes check for vip expire time
 setInterval(() => {
-  VIP.findOneAndDelete({ expires: { $lt: Date.now() } }).then((vip) => {
-    if (vip) {
-      const del_vip = new DEL_VIP({
-        name: vip.name,
-        user_pk: vip.user_pk,
-        expires: vip.expires,
-      });
-      del_vip.save();
-    }
-  });
+  VIP.findOneAndDelete({ expires: { $lt: Date.now() } })
+    .then((vip) => {
+      if (vip) {
+        const del_vip = new DEL_VIP({
+          name: vip.name,
+          user_pk: vip.user_pk,
+          expires: vip.expires,
+        });
+        del_vip.save();
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }, 1000);
 
 app.listen(PORT, console.log(`app listening on port:${PORT}`));

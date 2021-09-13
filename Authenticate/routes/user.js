@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 const passport = require("passport");
 const multipart = require("multer");
 const upload = multipart();
+const mongoose = require("mongoose");
 const User = require("../models/User");
 //const { VIP_1_month, VIP_2_month, VIP_3_month } = require("../models/vipticket");
 const VIP = require("../models/vipticket");
@@ -203,7 +204,7 @@ router.post("/getuserbyid", upload.none(), IsAuthenticated, (req, res) => {
       result["VIP"] = vip.name;
     }
   });
-  User.findOne({ _id: req.body.id }, (user) => {
+  User.findOne({ _id: req.body.id }, (err, user) => {
     if (!user) {
       res.send({ message: "user with this id doesnt exist", code: "nok" });
     } else {

@@ -3,9 +3,9 @@ module.exports = class User {
     this.name = name;
     this.id = id;
     this.sockID = socketID;
-    this.number = null;
+    this.number = "";
   }
-  getUserJson() {
+  get userJson() {
     return { name: this.name, id: this.id, sockID: this.sockID, number: this.number };
   }
 };
