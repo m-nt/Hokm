@@ -35,6 +35,7 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnect", () => {
+    matchM.playerDisconnect(io, socket);
     console.log("user disconnected");
   });
 });
