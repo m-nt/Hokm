@@ -13,7 +13,6 @@ const io = new Server(server, {
   },
 });
 const PORT = 3000;
-
 //MongoDB URL
 const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
@@ -23,19 +22,19 @@ const Options = require("../conf.json").MongoOpt;
 //   .then(() => console.log(`mongoose conected to Data Base...`))
 //   .catch((err) => console.log(err));
 
-const matchM = new MatchManager();
+const matchM = new MatchManager(io);
 
 io.on("connection", (socket) => {
   //console.log("a user connected");
   socket.on("init", (data) => {});
-  socket.on("ready", (data) => {
+  socket.on("PlayerReadyLobbie", (data) => {
     console.log(data);
-    const user = new User(data.name, data.id, socket.id);
+    const user = new User(data.name, data.id, socket);
     matchM.PlayerReady(user, io, socket);
   });
-
+  socket.on("ReadySignal", (data) => {});
   socket.on("disconnect", () => {
-    matchM.playerDisconnect(io, socket);
+    matchM.playerDisconnect(socket);
     console.log("user disconnected");
   });
 });
