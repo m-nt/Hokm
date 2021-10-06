@@ -21,9 +21,7 @@ const Options = require("../conf.json").MongoOpt;
 //   .connect(URL, Options)
 //   .then(() => console.log(`mongoose conected to Data Base...`))
 //   .catch((err) => console.log(err));
-
 const matchM = new MatchManager(io);
-
 io.on("connection", (socket) => {
   //console.log("a user connected");
   socket.on("init", (data) => {});
@@ -32,7 +30,9 @@ io.on("connection", (socket) => {
     const user = new User(data.name, data.id, socket);
     matchM.PlayerReady(user, io, socket);
   });
-  socket.on("ReadySignal", (data) => {});
+  socket.on("ReadySignal", (data) => {
+    matchM.ReadySignal(socket, data);
+  });
   socket.on("disconnect", () => {
     matchM.playerDisconnect(socket);
     console.log("user disconnected");

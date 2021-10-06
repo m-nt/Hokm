@@ -15,16 +15,32 @@ module.exports = class Game {
     this.gameState = this.State.LOBBY;
     this.stage = new Stage();
     this.readySignal = 0;
+    // data = {
+    //   pn:0,
+    //   cd:309,
+    // }
   }
-  next() {
+  next(data) {
     this.readySignal = 0;
     switch (this.gameState) {
       case this.State.LOBBY:
         this.io.to(this.room).emit("StartTheMatch");
         this.gameState = this.State.INGAME;
-        this.stage.init();
+        this.stage.next(data);
         break;
       case this.State.INGAME:
+        clearTimeout();
+        let result = this.stage.next(data);
+        this.io.to(this.room).emit("GetStage", result);
+        setTimeout(() => {
+          let nex = this.stage.nextPlayer.toString();
+          let leng = this.players[nex].length;
+          data = {
+            pn: this.stage.nextPlayer,
+            cd: this.players[nex][Math.floor(Math.random() * leng)],
+          };
+          this.next(data);
+        }, 5000);
         break;
       case this.State.ENDED:
         this.io.to(this.room).emit("EndTheMatch");

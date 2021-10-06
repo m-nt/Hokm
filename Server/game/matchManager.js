@@ -10,15 +10,24 @@ module.exports = class MatchManager {
     this.games = {};
     this.rooms = {};
   }
-  ReadySignal(/** @type {Socket} */ socket) {
+  ReadySignal(/** @type {Socket} */ socket, data) {
     let roomName = this.rooms[socket.id];
     let readySignal = this.games[roomName].readySignal;
     if (readySignal == 4) {
-      this.games[roomName].next();
+      this.games[roomName].next(data);
     } else {
       this.games[roomName].readySignal++;
     }
   }
+  NextStage(/** @type {Socket} */ socket, data) {
+    // let d = {pn:0,cd:0}
+    // Object.entries(this.games[roomName].players).forEach((user, key) => {
+    //   let playerNumber = key;
+    //   if (user[1].socket.id == socket.id) {
+    let roomName = this.rooms[socket.id];
+    this.games[roomName].next(data);
+  }
+
   PlayerReady(/** @type {User} */ player) {
     console.log(this.games);
     if (this.findSpot(player)) {
