@@ -20,12 +20,13 @@ module.exports = class MatchManager {
     }
   }
   NextStage(/** @type {Socket} */ socket, data) {
-    // let d = {pn:0,cd:0}
-    // Object.entries(this.games[roomName].players).forEach((user, key) => {
-    //   let playerNumber = key;
-    //   if (user[1].socket.id == socket.id) {
     let roomName = this.rooms[socket.id];
-    this.games[roomName].next(data);
+    Object.entries(this.games[roomName].players).forEach((user, key) => {
+      let playerNumber = user[0];
+      if (playerNumber == this.games[roomName].stage.nextPlayer.toString()) {
+        this.games[roomName].next(data);
+      }
+    });
   }
 
   PlayerReady(/** @type {User} */ player) {
