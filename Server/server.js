@@ -33,6 +33,9 @@ io.on("connection", (socket) => {
   socket.on("ReadySignal", (data) => {
     matchM.ReadySignal(socket, data);
   });
+  socket.on("setStage", (data) => {
+    matchM.NextStage(socket, data);
+  });
   socket.on("disconnect", () => {
     matchM.playerDisconnect(socket);
     console.log("user disconnected");

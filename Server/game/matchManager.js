@@ -13,7 +13,8 @@ module.exports = class MatchManager {
   ReadySignal(/** @type {Socket} */ socket, data) {
     let roomName = this.rooms[socket.id];
     let readySignal = this.games[roomName].readySignal;
-    if (readySignal == 4) {
+    console.log("ReadySignal: " + readySignal.toString());
+    if (readySignal == 3) {
       this.games[roomName].next(data);
     } else {
       this.games[roomName].readySignal++;
@@ -25,21 +26,24 @@ module.exports = class MatchManager {
       let playerNumber = user[0];
       if (playerNumber == this.games[roomName].stage.nextPlayer.toString()) {
         this.games[roomName].next(data);
+        return;
       }
     });
   }
 
   PlayerReady(/** @type {User} */ player) {
-    console.log(this.games);
+    //console.log(this.games);
     if (this.findSpot(player)) {
       console.log("-------------- find a spot --------------");
-      console.log(this.games);
-      console.log(this.rooms);
+      // console.log(this.games);
+      // console.log(this.rooms);
+      console.log(player.name);
     } else {
       this.MakeAMatch(player);
       console.log("-------------- make a match --------------");
-      console.log(this.games);
-      console.log(this.rooms);
+      // console.log(this.games);
+      // console.log(this.rooms);
+      console.log(player.name);
     }
   }
   MakeAMatch(/** @type {User} */ player) {
@@ -74,23 +78,25 @@ module.exports = class MatchManager {
   }
   playerDisconnect(/** @type {Socket} */ socket) {
     let roomName = this.rooms[socket.id];
-    if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
-      Object.entries(this.games[roomName].players).forEach((user, key) => {
-        let playerNumber = key;
-        if (user[1].socket.id == socket.id) {
-          this.io.to(roomName).emit("playerDCedLobby", user[1].userJson);
-          delete this.games[roomName].players[user[0]];
-          return true;
-        }
-      });
-      delete this.rooms[socket.id];
-    } else {
-      this.io.to(roomName).emit("playerDCed");
-      delete this.games[roomName];
-      delete this.rooms[socket.id];
-    }
-    console.log("-------------- player DCed --------------");
-    console.log(this.games);
-    console.log(this.rooms);
+    console.log(socket.id);
+    // if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
+    //   Object.entries(this.games[roomName].players).forEach((user, key) => {
+    //     let playerNumber = key;
+    //     if (user[1].socket.id == socket.id) {
+    //       this.io.to(roomName).emit("playerDCedLobby", user[1].userJson);
+    //       delete this.games[roomName].players[user[0]];
+    //       return true;
+    //     }
+    //   });
+    //   delete this.rooms[socket.id];
+    // } else {
+    //   this.io.to(roomName).emit("playerDCed");
+    //   delete this.games[roomName];
+    //   delete this.rooms[socket.id];
+    // }
+    // console.log("-------------- player DCed --------------");
+    // console.log(this.games);
+    // console.log(this.rooms);
+    // console.log(player.name);
   }
 };
