@@ -36,6 +36,9 @@ io.on("connection", (socket) => {
   socket.on("setStage", (data) => {
     matchM.NextStage(socket, data);
   });
+  socket.on("SendChat", (data) => {
+    io.to(matchM.rooms[socket.id]).emit("GetChat", data);
+  });
   socket.on("disconnect", () => {
     matchM.playerDisconnect(socket);
     console.log("user disconnected");

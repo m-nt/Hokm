@@ -7,6 +7,7 @@ module.exports = class User {
     this.number = "";
     this.cards = [];
     this.timeout = 120000;
+    this.active = true;
   }
   get userJson() {
     return { name: this.name, id: this.id, sockID: this.socket.id, number: this.number };

@@ -217,6 +217,7 @@ module.exports = class Stage {
     [+]Player 1:${this.playercards.P1}
     [+]Player 2:${this.playercards.P2}
     [+]Player 3:${this.playercards.P3}
+    ****************************************************************************
     `);
   }
   ResetTheMatch(team) {

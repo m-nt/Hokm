@@ -31,7 +31,15 @@ module.exports = class Game {
         this.stage.nextStage();
         break;
       case this.State.INGAME:
-        console.log("[-]Game State: INGAME");
+        console.log("[-]Game State: INGAME[" + this.room + "]");
+        console.log("[*]Players Status:");
+        Object.entries(this.players).forEach((user) => {
+          console.log(
+            "⌊____[" + user[0] + "] " + user[1].name + ": " + user[1].active
+              ? "Live"
+              : "Ofline" + " - id[" + user[1].id + "]"
+          );
+        });
         clearTimeout(this.alert);
         let result = this.stage.next(data);
         if (result.msg == "end") {

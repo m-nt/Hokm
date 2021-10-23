@@ -81,23 +81,15 @@ module.exports = class MatchManager {
   }
   playerDisconnect(/** @type {Socket} */ socket) {
     let roomName = this.rooms[socket.id];
-    console.log(socket.id);
+    if (roomName) {
+      Object.entries(this.games[roomName].players).forEach((user, key) => {
+        if (user[1].socket.id == socket.id) {
+          this.games[roomName].players[user[0]].timeout = 3000;
+          this.games[roomName].players[user[0]].active = false;
+          return true;
+        }
+      });
+    }
     // if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
-    Object.entries(this.games[roomName].players).forEach((user, key) => {
-      if (user[1].socket.id == socket.id) {
-        this.games[roomName].players[user[0]].timeout = 3000;
-        return true;
-      }
-    });
-    //   delete this.rooms[socket.id];
-    // } else {
-    //   this.io.to(roomName).emit("playerDCed");
-    //   delete this.games[roomName];
-    //   delete this.rooms[socket.id];
-    // }
-    // console.log("-------------- player DCed --------------");
-    // console.log(this.games);
-    // console.log(this.rooms);
-    // console.log(player.name);
   }
 };
