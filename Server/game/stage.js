@@ -6,6 +6,7 @@ module.exports = class Stage {
     STAGE3: "3,decide the hokm",
     STAGE4: "4,send cards 4 by 4",
     STAGE5: "5,paly the cards",
+    STAGE6: "6,reset the hand",
   };
   constructor() {
     this.cards = [
@@ -26,7 +27,8 @@ module.exports = class Stage {
     this.hand = 0;
     this.stage = this.StageEnum.STAGE0;
     this.readyNext = false;
-    this.timeout = 5000;
+    this.timeout = 3000;
+    this.msg = "";
   }
   nextStage() {
     if (this.readyNext) {
@@ -46,6 +48,9 @@ module.exports = class Stage {
         case this.StageEnum.STAGE4:
           this.stage = this.StageEnum.STAGE5;
           break;
+        case this.StageEnum.STAGE5:
+          this.stage = this.StageEnum.STAGE6;
+          break;
         default:
           break;
       }
@@ -57,7 +62,7 @@ module.exports = class Stage {
       case this.StageEnum.STAGE0:
         this.shuffledHand = this.shuffleTheHand();
         this.readyNext = true;
-        console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+        this.Logger({ pn: -1, cd: -1 });
         return this.stageJson;
       case this.StageEnum.STAGE1:
         let cards = this.shuffledHand.splice(0, 4);
@@ -76,7 +81,7 @@ module.exports = class Stage {
             return;
           }
         });
-        console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+        this.Logger({ pn: -1, cd: -1 });
         return result;
       case this.StageEnum.STAGE2:
         Object.keys(this.cardsOnGround).forEach((key) => {
@@ -87,15 +92,15 @@ module.exports = class Stage {
           this.playercards[key] = [...this.playercards[key], ...cards];
         });
         this.readyNext = true;
-        this.timeout = 10000;
-        console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+        this.timeout = 60000;
+        this.Logger({ pn: -1, cd: -1 });
         return this.stageJson;
       case this.StageEnum.STAGE3:
         let type = this.CardType(data.cd);
         this.hokm = type;
         this.readyNext = true;
         this.timeout = 5000;
-        console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+        this.Logger(data);
         return this.stageJson;
       case this.StageEnum.STAGE4:
         Object.keys(this.playercards).forEach((key) => {
@@ -103,12 +108,20 @@ module.exports = class Stage {
           this.playercards[key] = [...this.playercards[key], ...cards];
         });
         if (this.shuffledHand.length == 0) {
-          this.readyNext = true;
-          this.timeout = 10000;
+          //this.readyNext = true;
+          this.stage = this.StageEnum.STAGE5;
+          this.msg = "OK4";
+          this.timeout = 60000;
         }
-        console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+        this.Logger(data);
         return this.stageJson;
       case this.StageEnum.STAGE5:
+        if (this.cardsOnIndex == 0) {
+          Object.keys(this.cardsOnGround).forEach((key) => {
+            this.cardsOnGround[key] = 0;
+          });
+        }
+        this.msg = "";
         this.cardsOnGround["C" + data.pn] = data.cd;
         let index = this.playercards["P" + data.pn].indexOf(data.cd);
         this.playercards["P" + data.pn].splice(index, 1);
@@ -118,6 +131,7 @@ module.exports = class Stage {
         }
         if (this.cardsOnIndex == 4) {
           let winner = this.DecideWinner(this.cardsOnGround);
+
           if (winner.team == 0) {
             this.teamCount.team0++;
           } else {
@@ -137,12 +151,18 @@ module.exports = class Stage {
           this.playedPlayer = winner.nxpl;
           this.cardsOnIndex = 0;
 
+          // initiate next round
+          if (this.teamCount.team0 >= 7 || this.teamCount.team1 >= 7) {
+            this.stage = this.StageEnum.STAGE6;
+            this.timeout = 5000;
+          }
+
           if (this.teamScore.team0 >= 7 || this.teamScore.team1 >= 7) {
             //this.stage = this.StageEnum.STAGE6;
-            console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+            this.Logger(data);
             return { ...this.stageJson, msg: "end" };
           }
-          console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+          this.Logger(data);
           return this.stageJson;
         } else {
           if (this.nextPlayer == 3) {
@@ -152,16 +172,24 @@ module.exports = class Stage {
             this.playedPlayer = this.nextPlayer;
             this.nextPlayer++;
           }
-          console.log("Game STAGE: " + this.stage + "\t" + "STATUS: " + JSON.stringify(this.stageJson));
+          this.Logger(data);
           return this.stageJson;
         }
+      case this.StageEnum.STAGE6:
+        if (this.teamCount.team0 >= 7) {
+          this.ResetTheMatch(0);
+        } else {
+          this.ResetTheMatch(1);
+        }
+        this.Logger(data);
+        return this.stageJson;
       default:
         break;
     }
   }
   get stageJson() {
     return {
-      msg: "",
+      msg: this.msg,
       timeout: this.timeout,
       nextPlayer: this.nextPlayer,
       playedPlayer: this.playedPlayer,
@@ -175,18 +203,64 @@ module.exports = class Stage {
       hand: this.hand,
     };
   }
+  Logger(data) {
+    console.log(`
+    ************************** stage: ${this.stage} ****************************
+    [+]data: {pn:${data.pn}, cd:${data.cd}} - msg:[${this.msg}] 
+    [+]played player:[${this.playedPlayer}] - next player:[${this.nextPlayer}]
+    [+]Cards on the ground: [${this.cardsOnGround.C0},${this.cardsOnGround.C1},${this.cardsOnGround.C2},${this.cardsOnGround.C3}]
+    [+]ruler:[${this.ruler}] - hokm:[${this.hokm}] - hand:[${this.hand}]
+    [+]cards index:[${this.cardsOnIndex}] - timeout:[${this.timeout}]
+    [+]team counts: team0:[${this.teamCount.team0}] - team1:[${this.teamCount.team1}]
+    [+]team Scores: team0:[${this.teamScore.team0}] - team1:[${this.teamScore.team1}]
+    [+]Player 0:${this.playercards.P0}
+    [+]Player 1:${this.playercards.P1}
+    [+]Player 2:${this.playercards.P2}
+    [+]Player 3:${this.playercards.P3}
+    `);
+  }
+  ResetTheMatch(team) {
+    this.teamCount.team0 = 0;
+    this.teamCount.team1 = 0;
+    this.stage = this.StageEnum.STAGE2;
+    if (this.WitchTeam(this.ruler, true) == team) {
+      if (this.ruler == 3) {
+        this.ruler == 0;
+      } else {
+        this.ruler++;
+      }
+    }
+    this.nextPlayer = this.ruler;
+    this.playedPlayer = this.ruler;
+    this.shuffledHand = this.shuffleTheHand();
+    Object.keys(this.playercards).forEach((key) => {
+      this.playercards[key] = [];
+    });
+    Object.keys(this.cardsOnGround).forEach((key) => {
+      this.cardsOnGround[key] = 0;
+    });
+    Object.keys(this.playercards).forEach((key) => {
+      let cards = this.shuffledHand.splice(0, 5);
+      this.playercards[key] = [...this.playercards[key], ...cards];
+    });
+    this.readyNext = true;
+    this.timeout = 120000;
+    this.hokm = 0;
+    this.hand = 0;
+  }
   DecideWinner(cards) {
     let x = [];
     Object.values(cards).forEach((value) => {
       x.push(value);
     });
-    let hokms = this.DetectHokm(x);
+    let hokms = this.DetectType(x, this.hokm);
+    let hand = this.DetectType(x, this.hand);
     if (hokms.length > 0) {
       let Big = this.BigestCard(hokms);
       let index = x.indexOf(Big);
       return { nxpl: index, team: this.WitchTeam(index, false) };
     } else {
-      let Big = this.BigestCard(x);
+      let Big = this.BigestCard(hand);
       let index = x.indexOf(Big);
       return { nxpl: index, team: this.WitchTeam(index, false) };
     }
@@ -211,15 +285,15 @@ module.exports = class Stage {
   //   }
   //   return team
   // }
-  DetectHokm(x) {
-    let hokm = [];
-    x.forEach((key) => {
-      let m = key - this.hokm;
+  DetectType(x, type) {
+    let cards = [];
+    for (const key in x) {
+      let m = x[key] - type;
       if (m > 0 && m < 15) {
-        hokm.push(key);
+        cards.push(x[key]);
       }
-    });
-    return hokm;
+    }
+    return cards;
   }
   WitchTeam(x, reverse) {
     if (x == 0 || x == 2) {

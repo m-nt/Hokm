@@ -22,13 +22,16 @@ module.exports = class MatchManager {
   }
   NextStage(/** @type {Socket} */ socket, data) {
     let roomName = this.rooms[socket.id];
-    Object.entries(this.games[roomName].players).forEach((user, key) => {
-      let playerNumber = user[0];
-      if (playerNumber == this.games[roomName].stage.nextPlayer.toString()) {
+
+    if (data) {
+      if (data.pn == this.games[roomName].stage.nextPlayer) {
+        console.log("stage triggered by player number:[" + data.pn.toString() + "]");
         this.games[roomName].next(data);
-        return;
       }
-    });
+    } else {
+      console.log("stage triggered by player number:[-1]");
+      this.games[roomName].next({ pn: -1, cd: -1 });
+    }
   }
 
   PlayerReady(/** @type {User} */ player) {
@@ -80,14 +83,12 @@ module.exports = class MatchManager {
     let roomName = this.rooms[socket.id];
     console.log(socket.id);
     // if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
-    //   Object.entries(this.games[roomName].players).forEach((user, key) => {
-    //     let playerNumber = key;
-    //     if (user[1].socket.id == socket.id) {
-    //       this.io.to(roomName).emit("playerDCedLobby", user[1].userJson);
-    //       delete this.games[roomName].players[user[0]];
-    //       return true;
-    //     }
-    //   });
+    Object.entries(this.games[roomName].players).forEach((user, key) => {
+      if (user[1].socket.id == socket.id) {
+        this.games[roomName].players[user[0]].timeout = 3000;
+        return true;
+      }
+    });
     //   delete this.rooms[socket.id];
     // } else {
     //   this.io.to(roomName).emit("playerDCed");
