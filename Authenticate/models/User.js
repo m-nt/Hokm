@@ -1,4 +1,6 @@
 const mongoose = require("mongoose");
+const firendList = require("./friendlist.js");
+
 const UserSchema = new mongoose.Schema({
   Username: {
     type: String,
@@ -31,6 +33,12 @@ const UserSchema = new mongoose.Schema({
     required: true,
     default: 404,
   },
+  Friends: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "FriendList",
+    },
+  ],
 });
 
 const User = mongoose.model("User", UserSchema);
