@@ -1,12 +1,16 @@
 const mongoose = require("mongoose");
 
 const FriendList = mongoose.Schema({
-  request: {
+  status: {
     type: String,
     enum: ["ACCEPTED", "PENDING", "REJECTED"],
     default: "PENDING",
   },
-  user_pk: {
+  user_pk_sender: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
+  user_pk_reciver: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },

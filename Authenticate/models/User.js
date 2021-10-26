@@ -33,12 +33,11 @@ const UserSchema = new mongoose.Schema({
     required: true,
     default: 404,
   },
-  Friends: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "FriendList",
-    },
-  ],
+  Status: {
+    type: String,
+    enum: ["OFFLINE", "ONLINE", "AWAIT"],
+    default: "OFFLINE",
+  },
 });
 
 const User = mongoose.model("User", UserSchema);

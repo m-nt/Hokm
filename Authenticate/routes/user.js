@@ -7,6 +7,8 @@ const mongoose = require("mongoose");
 const User = require("../models/User");
 //const { VIP_1_month, VIP_2_month, VIP_3_month } = require("../models/vipticket");
 const VIP = require("../models/vipticket");
+const FriendListModel = require("../models/friendlist");
+
 const router = express.Router();
 const { IsAuthenticated } = require("../config/Auth");
 
@@ -213,5 +215,109 @@ router.post("/getuserbyid", upload.none(), IsAuthenticated, (req, res) => {
       res.send({ message: "user seccussfuly find", code: "ok", user: result });
     }
   });
+});
+router.post("/friendrequest", upload.none(), IsAuthenticated, (req, res) => {
+  if (!req.body.id) {
+    return res.status(400).send({ message: "player id is required!", code: "nok", err: "id not found" });
+  } else if (req.body.id == req.user._id) {
+    res.status(400).send({ message: "you can't send friend request to yourself :/", code: "nok", err: "" });
+  } else {
+    FriendListModel.findOne({
+      $or: [
+        { $and: [{ user_pk_sender: req.user._id }, { user_pk_reciver: req.body.id }] },
+        { $and: [{ user_pk_sender: req.body.id }, { user_pk_reciver: req.user._id }] },
+      ],
+    })
+      .then((user) => {
+        if (!user) {
+          const Freq = new FriendListModel({
+            user_pk_sender: req.user._id,
+            user_pk_reciver: req.body.id,
+          });
+          Freq.save();
+          res.status(200).send({ message: "request seccessfuly sended!", code: "ok", err: "" });
+        } else {
+          res.status(400).send({ message: "request already sended!", code: "nok", err: "similar request" });
+        }
+      })
+      .catch((err) => {
+        res.status(400).send({ message: "request failed to sended!", code: "nok", err: err.message });
+      });
+  }
+});
+router.post("/pendingrequests", upload.none(), IsAuthenticated, (req, res) => {
+  FriendListModel.find({ $and: [{ user_pk_reciver: req.user._id }, { status: "PENDING" }] })
+    .then((lists) => {
+      if (lists.length > 0) {
+        res.status(200).send({ message: "pending friend request finded", code: "ok", err: "", lists: lists });
+      } else {
+        res.status(200).send({ message: "there is no pending requests", code: "nok", err: "" });
+      }
+    })
+    .catch((err) => {
+      res.status(400).send({ message: "request failed to sended!", code: "nok", err: err.message });
+    });
+});
+router.post("/accept-reject", upload.none(), IsAuthenticated, (req, res) => {
+  if (!req.body.id) {
+    return res.status(400).send({ message: "id doesn't set", code: "nok", err: "id not found" });
+  }
+  if (req.body.accrej == "ACCEPTED" || req.body.accrej == "REJECTED") {
+    FriendListModel.findOne({
+      $and: [{ user_pk_sender: req.body.id }, { user_pk_reciver: req.user._id }, { status: "PENDING" }],
+    })
+      .then((list) => {
+        if (list) {
+          list.status = req.body.accrej;
+          list.save();
+          res.status(200).send({ message: "request set accordingly ", code: "ok", err: "" });
+        } else {
+          res.status(200).send({ message: "friendship already set ", code: "nok", err: "" });
+        }
+      })
+      .catch((err) => {
+        res.status(400).send({ message: "request failed to proccess!", code: "nok", err: err.message });
+      });
+  } else {
+    res.status(400).send({ message: "accrej doesn't set accordingly", code: "nok", err: "" });
+  }
+});
+router.post("/getfriends", upload.none(), IsAuthenticated, (req, res) => {
+  FriendListModel.find({
+    $and: [{ $or: [{ user_pk_sender: req.user._id }, { user_pk_reciver: req.user._id }] }, { status: "ACCEPTED" }],
+  })
+    .then((list) => {
+      let result = [];
+      for (let i = 0; i < list.length; i++) {
+        User.findOne({ _id: req.user._id == list[i].user_pk_sender ? list[i].user_pk_reciver : list[i].user_pk_sender })
+          .then((user) => {
+            result.push(user);
+            if (i == list.length - 1) {
+              return res.status(200).send({ message: "friendlist found ", code: "ok", users: result });
+            }
+          })
+          .catch((err) => {
+            res.status(400).send({ message: "wtf happend :(", code: "nok", err: err.message });
+          });
+      }
+    })
+    .catch((err) => {});
+});
+router.post("/changestatus", upload.none(), IsAuthenticated, (req, res) => {
+  if (!req.body.status) {
+    res.status(400).send({ message: "status is required in body", code: "nok", err: "" });
+  } else if (req.body.status == "OFFLINE" || req.body.status == "ONLINE" || req.body.status == "AWAIT") {
+    User.findOne({ _id: req.user._id })
+      .then((user) => {
+        user.Status = req.body.status;
+        user.save();
+        res.status(200).send({ message: "status seccessfuly changed", code: "ok", user: user });
+      })
+      .catch((err) => {
+        res.status(400).send({ message: "wtf happend :(", code: "nok", err: err.message });
+      });
+  } else {
+    res.status(400).send({ message: "status doesn't set accordingly", code: "nok", err: "" });
+  }
 });
 module.exports = router;
