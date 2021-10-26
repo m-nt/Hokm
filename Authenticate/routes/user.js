@@ -249,13 +249,24 @@ router.post("/pendingrequests", upload.none(), IsAuthenticated, (req, res) => {
   FriendListModel.find({ $and: [{ user_pk_reciver: req.user._id }, { status: "PENDING" }] })
     .then((lists) => {
       if (lists.length > 0) {
-        res.status(200).send({ message: "pending friend request finded", code: "ok", err: "", lists: lists });
+        //return users instead of lists
+        let result = [];
+        lists.forEach((list) => {
+          result.push(list.user_pk_sender);
+        });
+        User.find({ _id: { $in: result } })
+          .then((users) => {
+            res.status(200).send({ message: "pending friend request finded", code: "ok", err: "", users: users });
+          })
+          .catch((err) => {
+            res.status(400).send({ message: "wtf happend :(", code: "nok", err: err.message });
+          });
       } else {
         res.status(200).send({ message: "there is no pending requests", code: "nok", err: "" });
       }
     })
     .catch((err) => {
-      res.status(400).send({ message: "request failed to sended!", code: "nok", err: err.message });
+      res.status(400).send({ message: "request failed to proccess!", code: "nok", err: err.message });
     });
 });
 router.post("/accept-reject", upload.none(), IsAuthenticated, (req, res) => {
@@ -286,20 +297,18 @@ router.post("/getfriends", upload.none(), IsAuthenticated, (req, res) => {
   FriendListModel.find({
     $and: [{ $or: [{ user_pk_sender: req.user._id }, { user_pk_reciver: req.user._id }] }, { status: "ACCEPTED" }],
   })
-    .then((list) => {
+    .then((lists) => {
       let result = [];
-      for (let i = 0; i < list.length; i++) {
-        User.findOne({ _id: req.user._id == list[i].user_pk_sender ? list[i].user_pk_reciver : list[i].user_pk_sender })
-          .then((user) => {
-            result.push(user);
-            if (i == list.length - 1) {
-              return res.status(200).send({ message: "friendlist found ", code: "ok", users: result });
-            }
-          })
-          .catch((err) => {
-            res.status(400).send({ message: "wtf happend :(", code: "nok", err: err.message });
-          });
-      }
+      lists.forEach((list) => {
+        result.push(req.user._id == list.user_pk_sender ? list.user_pk_reciver : list.user_pk_sender);
+      });
+      User.find({ _id: { $in: result } })
+        .then((users) => {
+          res.status(200).send({ message: "friendlist found ", code: "ok", users: users });
+        })
+        .catch((err) => {
+          res.status(400).send({ message: "wtf happend :(", code: "nok", err: err.message });
+        });
     })
     .catch((err) => {});
 });

@@ -10,6 +10,9 @@ const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
 const VIP = require("./models/vipticket");
 const DEL_VIP = require("./models/deletedvip");
+const FriendListModel = require("./models/friendlist");
+const DeletedFriendListModel = require("./models/deletedfrndlist");
+
 //passport config
 require("./config/passport")(passport);
 //mongose connection
@@ -57,6 +60,20 @@ setInterval(() => {
     .catch((err) => {
       console.log(err);
     });
-}, 1000);
+  FriendListModel.findOneAndDelete({ status: "REJECTED" })
+    .then((list) => {
+      if (list) {
+        const del_frlst = new DeletedFriendListModel({
+          status: list.status,
+          user_pk_sender: list.user_pk_sender,
+          user_pk_reciver: list.user_pk_reciver,
+        });
+        del_frlst.save();
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}, 60000);
 
 app.listen(PORT, console.log(`app listening on port:${PORT}`));
