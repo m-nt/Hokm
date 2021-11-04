@@ -8,6 +8,7 @@ module.exports = class Game {
     INGAME: "ingame",
   };
   constructor(/** @type {Server} */ io) {
+    this.ready = false;
     this.room = "";
     this.io = io;
     this.players = {};
@@ -124,5 +125,15 @@ module.exports = class Game {
       result.push(user.userJson);
     });
     return result;
+  }
+  changePosition(index, toIndex) {
+    if (!(toIndex.toString() in this.players)) {
+      this.players[toIndex] = this.players[index];
+      this.players[toIndex].number = toIndex.toString();
+      delete this.players[index];
+      return this.playersJson;
+    } else {
+      return null;
+    }
   }
 };

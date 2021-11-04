@@ -28,7 +28,10 @@ io.on("connection", (socket) => {
   socket.on("PlayerReadyLobbie", (data) => {
     console.log(data);
     const user = new User(data.name, data.id, socket);
-    matchM.PlayerReady(user, io, socket);
+    matchM.PlayerReady(user);
+  });
+  socket.on("PlayerReadyCustomLobbie", (data) => {
+    const user = new User(data.name, data.id, socket);
   });
   socket.on("ReadySignal", (data) => {
     matchM.ReadySignal(socket, data);
