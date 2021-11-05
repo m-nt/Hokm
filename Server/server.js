@@ -24,7 +24,10 @@ const Options = require("../conf.json").MongoOpt;
 const matchM = new MatchManager(io);
 io.on("connection", (socket) => {
   //console.log("a user connected");
-  socket.on("init", (data) => {});
+  socket.on("init", (data) => {
+    const user = new User(data.name, data.id, socket);
+    matchM.players[socket.id] = user;
+  });
   socket.on("PlayerReadyLobbie", (data) => {
     console.log(data);
     const user = new User(data.name, data.id, socket);
@@ -32,6 +35,23 @@ io.on("connection", (socket) => {
   });
   socket.on("PlayerReadyCustomLobbie", (data) => {
     const user = new User(data.name, data.id, socket);
+    matchM.PlayerReadyCustom(user);
+  });
+  socket.on("PlayerJoinCustomLobby", (data) => {
+    // player join in a custom lobby
+    const user = new User(data.name, data.id, socket);
+    matchM.PlayerJoinCustom(user, data.room);
+  });
+  socket.on("ChangePosition", (data) => {
+    // changing the player position for custom lobby
+    matchM.PlayerChangePosition(socket, data);
+  });
+  socket.on("RequestToJoin", (data) => {
+    Object.entries(matchM.players).forEach((obj) => {
+      if (data.userID == obj[1].id) {
+        io.to(obj[0]).emit("RequestToJoin", { room: data.room, name: data.name });
+      }
+    });
   });
   socket.on("ReadySignal", (data) => {
     matchM.ReadySignal(socket, data);
@@ -42,7 +62,12 @@ io.on("connection", (socket) => {
   socket.on("SendChat", (data) => {
     io.to(matchM.rooms[socket.id]).emit("GetChat", data);
   });
+  socket.on("PlayerLeaveLobbie", (data) => {
+    // remove the player from lobby
+  });
+
   socket.on("disconnect", () => {
+    delete matchM.players[socket.id];
     matchM.playerDisconnect(socket);
     console.log("user disconnected");
   });

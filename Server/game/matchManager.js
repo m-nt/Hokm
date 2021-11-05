@@ -9,6 +9,7 @@ module.exports = class MatchManager {
     this.io = io;
     this.games = {};
     this.rooms = {};
+    this.players = {};
   }
   ReadySignal(/** @type {Socket} */ socket, data) {
     let roomName = this.rooms[socket.id];
