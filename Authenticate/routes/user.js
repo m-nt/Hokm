@@ -8,6 +8,7 @@ const User = require("../models/User");
 //const { VIP_1_month, VIP_2_month, VIP_3_month } = require("../models/vipticket");
 const VIP = require("../models/vipticket");
 const FriendListModel = require("../models/friendlist");
+const Report = require("../models/reports");
 
 const router = express.Router();
 const { IsAuthenticated } = require("../config/Auth");
@@ -328,5 +329,35 @@ router.post("/changestatus", upload.none(), IsAuthenticated, (req, res) => {
   } else {
     res.status(400).send({ message: "status doesn't set accordingly", code: "nok", err: "" });
   }
+});
+router.post("/setreport", upload.none(), IsAuthenticated, (req, res) => {
+  if (!req.body.type || !req.body.id) {
+    return res.status(400).send({ message: "type/id of report is required", code: "nok", err: "type/id is not set" });
+  }
+  const report = new Report({
+    type: req.body.type,
+    user_pk: req.body.id,
+    user_pk_sender: req.user._id,
+    message: req.body.message ? req.body.message : "None",
+  });
+  report.save();
+  res.status(200).send({ message: "report seccussfuly saved", code: "ok", err: "" });
+});
+router.post("/getreports", upload.none(), IsAuthenticated, (req, res) => {
+  Report.find({ $and: [{ user_pk: req.user._id }, { issued: false }] })
+    .then((reports) => {
+      if (reports.length > 0) {
+        reports.forEach((report) => {
+          report.issued = true;
+          report.save();
+        });
+        res.status(200).send({ message: "result of reports for this user", code: "ok", reports: reports, err: "" });
+      } else {
+        res.status(400).send({ message: "there is no reports for this user", code: "nok", err: "" });
+      }
+    })
+    .catch((err) => {
+      res.status(400).send({ message: "error acquired during reports extraction", code: "nok", err: err.message });
+    });
 });
 module.exports = router;

@@ -44,7 +44,9 @@ module.exports = class MatchManager {
     if (plyr) {
       this.rooms[plyr.socket.id] = room;
       player.socket.join(room);
-      this.io.to(roomname).emit("playersjoined", { users: this.games[room].playersJson });
+      this.io
+        .to(room)
+        .emit("playerpositionchange", { users: this.games[room].playersJson, room: this.games[room].room });
     }
   }
   PlayerChangePosition(/** @type {Socket} */ socket, data) {
@@ -52,7 +54,9 @@ module.exports = class MatchManager {
     if (data.index && data.toIndex && !this.games[room].ready) {
       let plyrs = this.games[room].changePosition(data.index, data.toIndex);
       if (plyrs) {
-        this.io.to(roomname).emit("playerpositionchange", { users: this.games[room].playersJson });
+        this.io
+          .to(room)
+          .emit("playerpositionchange", { users: this.games[room].playersJson, room: this.games[room].room });
       }
     }
   }
@@ -60,7 +64,7 @@ module.exports = class MatchManager {
     let room = this.rooms[socket.id];
     if (!("4" in this.games[room].players)) {
       this.games[room].ready = true;
-      this.io.to(roomname).emit("customlobbieready");
+      this.io.to(room).emit("customlobbyready");
     }
   }
   PlayerReady(/** @type {User} */ player) {
@@ -87,7 +91,11 @@ module.exports = class MatchManager {
     this.games[roomName] = game;
     this.rooms[player.socket.id] = roomName;
     player.socket.join(roomName);
-    this.io.to(roomName).emit("playersjoined", { users: game.playersJson, room: game.room });
+    if (game.ready) {
+      this.io.to(roomName).emit("playersjoined", { users: game.playersJson, room: game.room });
+    } else {
+      this.io.to(roomName).emit("playerpositionchange", { users: game.playersJson, room: game.room });
+    }
   }
 
   findSpot(/** @type {User} */ player) {
@@ -99,9 +107,13 @@ module.exports = class MatchManager {
         if (plyr) {
           this.rooms[plyr.socket.id] = roomname;
           player.socket.join(roomname);
-          this.io.to(roomname).emit("playersjoined", { users: game[1].playersJson });
+          this.io.to(roomname).emit("playersjoined", { users: game[1].playersJson, room: game[1].room });
           res = true;
           return true;
+        }
+      } else {
+        if (Object.keys(game[1].players).length == 0) {
+          delete this.games[game[0]];
         }
       }
     });
@@ -109,6 +121,29 @@ module.exports = class MatchManager {
       return true;
     } else {
       return false;
+    }
+  }
+  playerLeaveLobby(/** @type {Socket} */ socket) {
+    let roomName = this.rooms[socket.id];
+    if (roomName) {
+      Object.entries(this.games[roomName].players).forEach((item) => {
+        if (item[1].socket.id == socket.id) {
+          delete this.games[roomName].players[item[0]];
+          delete this.rooms[socket.id];
+        }
+      });
+      if (socket.id in this.players) {
+        this.players[socket.id].socket.leave(roomName);
+        if (this.games[roomName].ready) {
+          this.io
+            .to(roomName)
+            .emit("playersjoined", { users: this.games[roomName].playersJson, room: this.games[roomName].room });
+        } else {
+          this.io
+            .to(roomName)
+            .emit("playerpositionchange", { users: this.games[roomName].playersJson, room: this.games[roomName].room });
+        }
+      }
     }
   }
   playerDisconnect(/** @type {Socket} */ socket) {
@@ -121,7 +156,14 @@ module.exports = class MatchManager {
           return true;
         }
       });
+      if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
+        this.playerLeaveLobby(socket);
+      }
+      if (Object.keys(this.games[roomName].players).length == 0) {
+        delete this.games[roomName];
+        this.io.to(roomName).emit("GameDestroied");
+      }
     }
-    // if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
+    delete this.players[socket.id];
   }
 };

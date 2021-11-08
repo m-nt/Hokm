@@ -1,23 +1,27 @@
 const moongose = require("mongoose");
 
-const Report = new moongose.Schema({
-  name: {
-    type: String,
+const ReportSchema = new moongose.Schema({
+  type: {
+    type: Number,
     require: true,
   },
   user_pk: {
     type: moongose.Schema.Types.ObjectId,
     ref: "User",
   },
+  user_pk_sender: {
+    type: moongose.Schema.Types.ObjectId,
+    ref: "User",
+  },
   message: {
-    type: Date,
-    require: true,
+    type: String,
+    default: "None",
+  },
+  issued: {
+    type: Boolean,
+    default: false,
   },
 });
 
-const Report = moongose.model("Reports", vIP);
-// const VIP_2_month = moongose.model("VIP2", vIP_2_month);
-// const VIP_3_month = moongose.model("VIP3", vIP_3_month);
-
-// module.exports = { VIP_1_month, VIP_2_month, VIP_3_month };
+const Report = moongose.model("Reports", ReportSchema);
 module.exports = Report;

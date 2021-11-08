@@ -16,6 +16,7 @@ const PORT = 3000;
 //MongoDB URL
 const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
+const { match } = require("assert");
 // //mongose connection
 // mongoose
 //   .connect(URL, Options)
@@ -28,18 +29,21 @@ io.on("connection", (socket) => {
     const user = new User(data.name, data.id, socket);
     matchM.players[socket.id] = user;
   });
-  socket.on("PlayerReadyLobbie", (data) => {
+  socket.on("ReadyToPlayCustom", (data) => {
+    matchM.CustomMatchReady(socket);
+  });
+  socket.on("PlayerReadyLobby", (data) => {
     console.log(data);
     const user = new User(data.name, data.id, socket);
     matchM.PlayerReady(user);
   });
-  socket.on("PlayerReadyCustomLobbie", (data) => {
+  socket.on("PlayerReadyCustomLobby", (data) => {
     const user = new User(data.name, data.id, socket);
     matchM.PlayerReadyCustom(user);
   });
   socket.on("PlayerJoinCustomLobby", (data) => {
     // player join in a custom lobby
-    const user = new User(data.name, data.id, socket);
+    const user = new User(data.name, data.userID, socket);
     matchM.PlayerJoinCustom(user, data.room);
   });
   socket.on("ChangePosition", (data) => {
@@ -49,6 +53,7 @@ io.on("connection", (socket) => {
   socket.on("RequestToJoin", (data) => {
     Object.entries(matchM.players).forEach((obj) => {
       if (data.userID == obj[1].id) {
+        console.log("send RequestToJoin");
         io.to(obj[0]).emit("RequestToJoin", { room: data.room, name: data.name });
       }
     });
@@ -62,8 +67,9 @@ io.on("connection", (socket) => {
   socket.on("SendChat", (data) => {
     io.to(matchM.rooms[socket.id]).emit("GetChat", data);
   });
-  socket.on("PlayerLeaveLobbie", (data) => {
+  socket.on("PlayerLeaveLobby", (data) => {
     // remove the player from lobby
+    matchM.playerLeaveLobby(socket);
   });
 
   socket.on("disconnect", () => {
