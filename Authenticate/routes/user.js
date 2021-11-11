@@ -301,7 +301,7 @@ router.post("/getfriends", upload.none(), IsAuthenticated, (req, res) => {
     .then((lists) => {
       let result = [];
       lists.forEach((list) => {
-        result.push(req.user._id == list.user_pk_sender ? list.user_pk_reciver : list.user_pk_sender);
+        result.push(list.user_pk_sender.equals(req.user._id) ? list.user_pk_reciver : list.user_pk_sender);
       });
       User.find({ _id: { $in: result } })
         .then((users) => {

@@ -8,11 +8,12 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "socket.io": "latest",
+    "appmetrics-dash": "^5.3.0",
     "connect-flash": "latest",
     "express": "latest",
     "jalali-date": "latest",
-    "mongoose": "latest"
+    "mongoose": "latest",
+    "socket.io": "latest"
   },
   "author": "mohamad nosratian",
   "license": "ISC",

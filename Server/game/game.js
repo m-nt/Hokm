@@ -36,9 +36,15 @@ module.exports = class Game {
         console.log("[*]Players Status:");
         Object.entries(this.players).forEach((user) => {
           console.log(
-            "⌊____[" + user[0] + "] " + user[1].name + ": " + user[1].active
-              ? "Live"
-              : "Ofline" + " - id[" + user[1].id + "]"
+            "⌊____[" +
+              user[0] +
+              "] " +
+              user[1].name +
+              ": " +
+              (user[1].active ? "Live" : "Offline") +
+              " - id[" +
+              user[1].id +
+              "]"
           );
         });
         clearTimeout(this.alert);
@@ -65,7 +71,11 @@ module.exports = class Game {
             console.log("[*]stagte triggered Timeout");
             this.next(data);
           },
-          this.stage.stage == this.stage.StageEnum.STAGE5 ? this.players[this.stage.nextPlayer].timeout : result.timeout
+          this.stage.stage == this.stage.StageEnum.STAGE5
+            ? this.players[this.stage.nextPlayer].timeout
+            : this.players[this.stage.nextPlayer].active
+            ? result.timeout
+            : this.players[this.stage.nextPlayer].timeout
         );
         break;
       default:

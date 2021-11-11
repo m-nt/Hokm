@@ -2,3 +2,5 @@ node_modules
 conf.json
 package-lock.json
 Static
+.vscode
+resourceRegistry.log

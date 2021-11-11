@@ -1,3 +1,4 @@
+//require("appmetrics-dash").monitor();
 const Express = require("express");
 const mongoose = require("mongoose");
 const app = Express();
@@ -28,6 +29,9 @@ io.on("connection", (socket) => {
   socket.on("init", (data) => {
     const user = new User(data.name, data.id, socket);
     matchM.players[socket.id] = user;
+    Object.values(matchM.players).forEach((player) => {
+      console.log(`player[${player.socket.id}] with name:${player.name}`);
+    });
   });
   socket.on("ReadyToPlayCustom", (data) => {
     matchM.CustomMatchReady(socket);

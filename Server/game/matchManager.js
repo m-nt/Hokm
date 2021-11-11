@@ -14,7 +14,7 @@ module.exports = class MatchManager {
   ReadySignal(/** @type {Socket} */ socket, data) {
     let roomName = this.rooms[socket.id];
     let readySignal = this.games[roomName].readySignal;
-    console.log("ReadySignal: " + readySignal.toString());
+    console.log(`ReadySignal: [${readySignal}] by: [${socket.id}] in: [${roomName}]`);
     if (readySignal == 3) {
       this.games[roomName].next(data);
     } else {
@@ -65,6 +65,8 @@ module.exports = class MatchManager {
     if (!("4" in this.games[room].players)) {
       this.games[room].ready = true;
       this.io.to(room).emit("customlobbyready");
+    } else {
+      this.io.to(room).emit("customlobbyNOTready");
     }
   }
   PlayerReady(/** @type {User} */ player) {
@@ -111,11 +113,12 @@ module.exports = class MatchManager {
           res = true;
           return true;
         }
-      } else {
-        if (Object.keys(game[1].players).length == 0) {
-          delete this.games[game[0]];
-        }
       }
+      // else {
+      //   if (Object.keys(game[1].players).length == 0) {
+      //     delete this.games[game[0]];
+      //   }
+      // }
     });
     if (res) {
       return true;
@@ -144,6 +147,18 @@ module.exports = class MatchManager {
             .emit("playerpositionchange", { users: this.games[roomName].playersJson, room: this.games[roomName].room });
         }
       }
+      let isPlayable = false;
+      Object.values(this.games[roomName].players).forEach((player) => {
+        isPlayable = true;
+        return true;
+      });
+      if (!isPlayable) {
+        delete this.games[roomName];
+        this.io.to(roomName).emit("GameDestroied");
+      }
+      Object.values(this.games).forEach((game) => {
+        console.log(`game id(${game.room}) with:${game.gameState} status`);
+      });
     }
   }
   playerDisconnect(/** @type {Socket} */ socket) {
@@ -159,11 +174,21 @@ module.exports = class MatchManager {
       if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
         this.playerLeaveLobby(socket);
       }
-      if (Object.keys(this.games[roomName].players).length == 0) {
+      let isPlayable = false;
+      Object.values(this.games[roomName].players).forEach((player) => {
+        if (player.active) {
+          isPlayable = true;
+          return true;
+        }
+      });
+      if (!isPlayable) {
+        clearTimeout(this.games[roomName].alert);
         delete this.games[roomName];
-        this.io.to(roomName).emit("GameDestroied");
       }
     }
     delete this.players[socket.id];
+    Object.values(this.games).forEach((game) => {
+      console.log(`game id(${game.room}) with:${game.gameState} status`);
+    });
   }
 };
