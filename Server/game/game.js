@@ -93,19 +93,25 @@ module.exports = class Game {
         res = cards[Math.floor(Math.random() * leng)];
         break;
       case 5:
-        let hands = this.DetectType(cards, result.hands);
+        let hands = this.DetectType(cards, result.hand);
         let hokms = this.DetectType(cards, result.hokm);
         //let rad_hold = [...cards.filter(n=>!hands.includes(n))]
         //let rad = [...rad_hold.filter(n=>!hokms.includes(n))]
-        if (hands.length > 0) {
+        if (hands.length > 0 && leng < 13) {
           res = hands[Math.floor(Math.random() * hands.length)];
-        } else if (hokms.length > 0) {
+        } else if (hokms.length > 0 && leng < 13) {
           res = hokms[Math.floor(Math.random() * hokms.length)];
         } else {
           res = cards[Math.floor(Math.random() * cards.length)];
         }
         break;
     }
+    console.log(
+      `AI Decide:(${res})\ncards length:${leng} - stage:${stage}\ncards:[${cards}]\nhands:[${this.DetectType(
+        cards,
+        result.hands
+      )}]\nhokms:[${this.DetectType(cards, result.hokm)}]`
+    );
     return res;
   }
   DetectType(x, type) {

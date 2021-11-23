@@ -173,17 +173,18 @@ module.exports = class MatchManager {
       });
       if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
         this.playerLeaveLobby(socket);
-      }
-      let isPlayable = false;
-      Object.values(this.games[roomName].players).forEach((player) => {
-        if (player.active) {
-          isPlayable = true;
-          return true;
+      } else {
+        let isPlayable = false;
+        Object.values(this.games[roomName].players).forEach((player) => {
+          if (player.active) {
+            isPlayable = true;
+            return true;
+          }
+        });
+        if (!isPlayable) {
+          clearTimeout(this.games[roomName].alert);
+          delete this.games[roomName];
         }
-      });
-      if (!isPlayable) {
-        clearTimeout(this.games[roomName].alert);
-        delete this.games[roomName];
       }
     }
     delete this.players[socket.id];
