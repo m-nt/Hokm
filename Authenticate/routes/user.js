@@ -129,6 +129,10 @@ router.post("/viptest", upload.none(), IsAuthenticated, (req, res) => {
 });
 router.post("/updateuser", upload.single("Avatar"), IsAuthenticated, (req, res) => {
   avatar = req.file ? req.file.buffer : req.user.Avatar;
+  let password = "";
+  if (req.body.Password) {
+    password = req.body.Password;
+  }
   const name =
     req.body.Username && req.body.Username.length > 0 && req.body.Username != req.user.Username
       ? req.body.Username
@@ -154,6 +158,27 @@ router.post("/updateuser", upload.single("Avatar"), IsAuthenticated, (req, res) 
           .then((user) => {
             User.findOne({ Username: name.length > 0 ? name : req.user.Username })
               .then((loser) => {
+                if (password.length > 0) {
+                  bcrypt
+                    .compare(password, loser.Password)
+                    .then((res) => {
+                      if (!res) {
+                        bcrypt
+                          .genSalt(15)
+                          .then((salt) => {
+                            bcrypt
+                              .hash(password, salt)
+                              .then((hash) => {
+                                loser.Password = hash;
+                                loser.save();
+                              })
+                              .catch((err) => {});
+                          })
+                          .catch((err) => {});
+                      }
+                    })
+                    .catch((err) => {});
+                }
                 VIP.findOne({ user_pk: req.user._id })
                   .then((_vip) => {
                     if (_vip) {

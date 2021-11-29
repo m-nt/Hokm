@@ -4,6 +4,7 @@ const PaySchema = mongoose.Schema({
   code: {
     type: Number,
     require: false,
+    default: 0,
   },
   user_pk: {
     type: mongoose.Schema.Types.ObjectId,
@@ -11,27 +12,38 @@ const PaySchema = mongoose.Schema({
   },
   amount: {
     type: Number,
-    require: false,
+    require: true,
+  },
+  description: {
+    type: String,
+    require: true,
+  },
+  authority: {
+    type: String,
+    require: true,
   },
   ref_id: {
     type: Number,
     require: false,
+    default: 0,
   },
   card_pan: {
     type: String,
     require: false,
+    default: "",
   },
   card_hash: {
     type: String,
     require: false,
+    default: "",
   },
-  fee_type: {
-    type: String,
-    require: false,
+  date: {
+    type: Date,
+    default: Date.now(),
   },
-  fee: {
+  message: {
     type: String,
-    require: false,
+    default: "Unpaid",
   },
 });
 
