@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const firendList = require("./friendlist.js");
 
 const UserSchema = new mongoose.Schema({
   Username: {

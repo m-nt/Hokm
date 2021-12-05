@@ -205,13 +205,20 @@ router.post("/updateuser", upload.single("Avatar"), IsAuthenticated, (req, res) 
     });
 });
 router.post("/updatecurency", upload.none(), IsAuthenticated, (req, res) => {
-  if (!req.body.curency && !req.body.curency.length > 0) {
-    res.send({ message: "value is invalid!", code: "nok" });
-  } else {
-    User.findOneAndUpdate({ Username: req.user.Username }, { Curency: req.body.curency }).then((user) => {
-      res.send({ message: "user seccussfuly updated", code: "ok", user: user });
+  User.findOne({ _id: req.user._id })
+    .then((user) => {
+      if (user) {
+        user.Curency += user.Debt;
+        user.Debt = 0;
+        user.save();
+        res.send({ message: "user seccussfuly updated", code: "ok", user: user });
+      } else {
+        res.send({ message: "user didn't find", code: "nok" });
+      }
+    })
+    .catch((err) => {
+      res.send({ message: "have a problem to get the user", code: "nok", error: err });
     });
-  }
 });
 router.post("/verifyvip", upload.none(), IsAuthenticated, (req, res) => {
   VIP.findOne({ user_pk: req.user._id }).then((vip) => {

@@ -1,6 +1,8 @@
 const User = require("../models/User");
 const Stage = require("./stage");
 const { Server } = require("socket.io");
+const UserM = require("../models/UserM");
+const mongoose = require("mongoose");
 
 module.exports = class Game {
   State = {
@@ -50,7 +52,27 @@ module.exports = class Game {
         clearTimeout(this.alert);
         let result = this.stage.next(data);
         if (result.msg == "end") {
+          let score = (result.teamScore.team0 - result.teamScore.team1) * 5;
+          Object.values(this.players).forEach((/** @type {User} */ users) => {
+            UserM.findOne({ _id: mongoose.Types.ObjectId(users.id) })
+              .then((user) => {
+                if (user) {
+                  user.Debt +=
+                    score > 0
+                      ? Number(users.number) == 0 || Number(users.number) == 2
+                        ? score
+                        : score * -1
+                      : Number(users.number) == 0 || Number(users.number) == 2
+                      ? score
+                      : score * -1;
+                }
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+          });
           this.io.to(this.room).emit("EndTheMatch", result);
+
           //if (data.pn == this.stage.nextPlayer)
         } else {
           this.io.to(this.room).emit("GetStage", {

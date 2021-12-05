@@ -6,23 +6,22 @@ const http = require("http");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const MatchManager = require("./game/matchManager");
-const Game = require("./game/game");
 const User = require("./models/User");
 const io = new Server(server, {
   cors: {
     origin: "*",
   },
 });
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 //MongoDB URL
 const URL = require("../conf.json").MongoURL;
 const Options = require("../conf.json").MongoOpt;
 const { match } = require("assert");
 // //mongose connection
-// mongoose
-//   .connect(URL, Options)
-//   .then(() => console.log(`mongoose conected to Data Base...`))
-//   .catch((err) => console.log(err));
+mongoose
+  .connect(URL, Options)
+  .then(() => console.log(`mongoose conected to Data Base...`))
+  .catch((err) => console.log(err));
 const matchM = new MatchManager(io);
 io.on("connection", (socket) => {
   //console.log("a user connected");
