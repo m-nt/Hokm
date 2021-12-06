@@ -14,8 +14,8 @@ const io = new Server(server, {
 });
 const PORT = process.env.PORT || 3000;
 //MongoDB URL
-const URL = require("../conf.json").MongoURL;
-const Options = require("../conf.json").MongoOpt;
+const URL = require("./conf.json").MongoURL;
+const Options = require("./conf.json").MongoOpt;
 const { match } = require("assert");
 // //mongose connection
 mongoose

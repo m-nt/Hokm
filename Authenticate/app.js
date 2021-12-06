@@ -6,8 +6,8 @@ const passport = require("passport");
 const app = express();
 const PORT = process.env.PORT || 8080;
 //MongoDB URL
-const URL = require("../conf.json").MongoURL;
-const Options = require("../conf.json").MongoOpt;
+const URL = require("./conf.json").MongoURL;
+const Options = require("./conf.json").MongoOpt;
 const VIP = require("./models/vipticket");
 const DEL_VIP = require("./models/deletedvip");
 const FriendListModel = require("./models/friendlist");
@@ -36,7 +36,7 @@ app.use(
   })
 );
 //passport midware
-app.use(express.static("../Static"));
+app.use(express.static("./Static"));
 app.use(passport.initialize());
 app.use(passport.session());
 
