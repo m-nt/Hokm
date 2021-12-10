@@ -108,7 +108,7 @@ router.post("/leaderboard", upload.none(), IsAuthenticated, (req, res) => {
       res.send({ message: result, code: "ok" });
     })
     .catch((err) => {
-      if (err) res.send({ message: "failed to retrieve players !", code: "tok" });
+      if (err) res.send({ message: "failed to retrieve players !", code: "nok" });
     });
 });
 router.post("/viptest", upload.none(), IsAuthenticated, (req, res) => {
@@ -390,6 +390,19 @@ router.post("/getreports", upload.none(), IsAuthenticated, (req, res) => {
     })
     .catch((err) => {
       res.status(400).send({ message: "error acquired during reports extraction", code: "nok", err: err.message });
+    });
+});
+router.post("/getuser", upload.none(), IsAuthenticated, (req, res) => {
+  User.findOne({ _id: req.user._id })
+    .then((user) => {
+      if (user) {
+        res.status(200).send({ message: "user retrived seccussfuly", code: "ok", user: user, err: "" });
+      } else {
+        res.status(400).send({ message: "didn't find the user", code: "nok" });
+      }
+    })
+    .catch((err) => {
+      res.status(400).send({ message: "had a problem with data base", code: "nok", err: err });
     });
 });
 module.exports = router;
