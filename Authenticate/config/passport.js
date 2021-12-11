@@ -28,7 +28,7 @@ module.exports = (passport) => {
     new CookieStrategy(
       {
         cookieName: "connect.sid",
-        signed: false,
+        signed: true,
         passReqToCallback: true,
       },
       function (req, token, done) {
