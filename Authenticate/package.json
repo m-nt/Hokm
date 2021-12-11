@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "latest",
+    "cookie-parser": "latest",
     "cors": "^2.8.5",
     "express": "latest",
     "express-http-proxy": "latest",
@@ -17,6 +18,7 @@
     "mongoose": "latest",
     "multer": "^1.4.2",
     "passport": "latest",
+    "passport-cookie": "latest",
     "passport-local": "latest"
   },
   "author": "mohamad nosratian",

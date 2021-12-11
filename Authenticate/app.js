@@ -12,6 +12,7 @@ const VIP = require("./models/vipticket");
 const DEL_VIP = require("./models/deletedvip");
 const FriendListModel = require("./models/friendlist");
 const DeletedFriendListModel = require("./models/deletedfrndlist");
+const cookieParser = require("cookie-parser");
 //passport config
 require("./config/passport")(passport);
 //mongose connection
@@ -21,6 +22,7 @@ mongose
   .catch((err) => console.log(err));
 
 //Body Parser
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
