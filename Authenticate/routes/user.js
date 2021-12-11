@@ -74,7 +74,7 @@ router.post("/loggin", upload.none(), passport.authenticate("local"), (req, res)
       res.send({ message: err.message, code: "nok" });
     });
 });
-router.post("/checkloggin", upload.none(), IsAuthenticated, (req, res) => {
+router.post("/checkloggin", upload.none(), IsAuthenticated, passport.authenticate("local"), (req, res) => {
   VIP.findOne({ user_pk: req.user._id })
     .then((_vip) => {
       if (_vip) {

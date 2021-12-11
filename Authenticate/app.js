@@ -12,7 +12,6 @@ const VIP = require("./models/vipticket");
 const DEL_VIP = require("./models/deletedvip");
 const FriendListModel = require("./models/friendlist");
 const DeletedFriendListModel = require("./models/deletedfrndlist");
-
 //passport config
 require("./config/passport")(passport);
 //mongose connection
