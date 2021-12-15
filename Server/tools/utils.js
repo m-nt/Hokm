@@ -1,4 +1,4 @@
-module.exports = { RandomAlphabet };
+const fs = require("fs");
 
 function RandomAlphabet(length, isNumber, isSymbol, isUpper) {
   let result = "";
@@ -24,3 +24,12 @@ function RandomAlphabet(length, isNumber, isSymbol, isUpper) {
   }
   return result;
 }
+function Logger(params) {
+  console.log(params);
+  fs.appendFile("../log.txt", params + "\n", (err) => {
+    if (err) {
+      console.log(err);
+    }
+  });
+}
+module.exports = { RandomAlphabet, Logger };

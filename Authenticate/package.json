@@ -7,23 +7,23 @@
     "test": "nodemon app"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "bcryptjs": "latest",
-    "cookie-parser": "latest",
-    "cors": "^2.8.5",
-    "express": "latest",
-    "express-http-proxy": "latest",
-    "express-session": "latest",
-    "jalali-date": "latest",
-    "mongoose": "latest",
-    "multer": "^1.4.2",
-    "passport": "latest",
-    "passport-cookie": "latest",
-    "passport-local": "latest"
+    "axios": "*",
+    "bcryptjs": "*",
+    "cookie-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "express-http-proxy": "*",
+    "express-session": "*",
+    "jalali-date": "*",
+    "mongoose": "*",
+    "multer": "*",
+    "passport": "*",
+    "passport-cookie": "*",
+    "passport-local": "*"
   },
   "author": "mohamad nosratian",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "*"
   }
 }

@@ -3,7 +3,8 @@ const Stage = require("./stage");
 const { Server } = require("socket.io");
 const UserM = require("../models/UserM");
 const mongoose = require("mongoose");
-
+const fs = require("fs");
+const { Logger } = require("../tools/utils");
 module.exports = class Game {
   State = {
     LOBBY: "lobby",
@@ -27,28 +28,15 @@ module.exports = class Game {
     this.readySignal = 0;
     switch (this.gameState) {
       case this.State.LOBBY:
-        console.log("[-]Game State: LOBBY");
+        this.LoggerLobby();
+        Logger("/////////////////////// Game State: LOBBY /////////////////////////");
         this.io.to(this.room).emit("StartTheMatch");
         this.gameState = this.State.INGAME;
         this.stage.next(data);
         this.stage.nextStage();
         break;
       case this.State.INGAME:
-        console.log("[-]Game State: INGAME[" + this.room + "]");
-        console.log("[*]Players Status:");
-        Object.entries(this.players).forEach((user) => {
-          console.log(
-            "⌊____[" +
-              user[0] +
-              "] " +
-              user[1].name +
-              ": " +
-              (user[1].active ? "Live" : "Offline") +
-              " - id[" +
-              user[1].id +
-              "]"
-          );
-        });
+        Logger(this.LoggerinGame());
         clearTimeout(this.alert);
         let result = this.stage.next(data);
         if (result.msg == "end") {
@@ -104,6 +92,23 @@ module.exports = class Game {
         break;
     }
   }
+  LoggerinGame() {
+    let loger = `^^^^^^^^^^^^^^^^ Game State: INGAME[${this.room}] ^^^^^^^^^^^^^^^^^\n[*]Players Status:`;
+    Object.entries(this.players).forEach((user) => {
+      loger +=
+        "\n" +
+        "⌊____[" +
+        user[0] +
+        "] " +
+        user[1].name +
+        ": " +
+        (user[1].active ? "Live" : "Offline") +
+        " - id[" +
+        user[1].id +
+        "]";
+    });
+    return loger;
+  }
   AIdecision(result) {
     let nex = this.stage.nextPlayer.toString();
     let leng = result.playerCards["P" + nex].length;
@@ -128,7 +133,7 @@ module.exports = class Game {
         }
         break;
     }
-    console.log(
+    Logger(
       `AI Decide:(${res})\ncards length:${leng} - stage:${stage}\ncards:[${cards}]\nhands:[${this.DetectType(
         cards,
         result.hands

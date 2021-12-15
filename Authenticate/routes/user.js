@@ -62,19 +62,27 @@ router.post("/register", upload.single("Avatar"), (req, res) => {
 });
 
 router.post("/loggin", upload.none(), passport.authenticate("local"), (req, res) => {
+  User.findOneAndUpdate({ _id: req.user._id }, { token: "connect.sid=" + req.cookies["connect.sid"] })
+    .then((user) => {})
+    .catch((err) => {
+      console.log(err);
+    });
   VIP.findOne({ user_pk: req.user._id })
     .then((_vip) => {
       if (_vip) {
-        res.send({ message: "You are logged in !", code: "ok", user: req.user, vip: _vip });
+        res.send({ message: "You are logged in ! with vip", code: "ok", user: req.user, vip: _vip });
       } else {
-        res.send({ message: "You are logged in !", code: "ok", user: req.user });
+        res.send({ message: "You are logged in ! without vip", code: "ok", user: req.user });
       }
     })
     .catch((err) => {
       res.send({ message: err.message, code: "nok" });
     });
 });
-router.post("/checkloggin", upload.none(), IsAuthenticated, passport.authenticate("cookie"), (req, res) => {
+router.post("/stelthloggin", upload.none(), passport.authenticate("local"), (req, res) => {
+  res.send({ message: "You are logged in !", code: "ok" });
+});
+router.post("/checkloggin", upload.none(), IsAuthenticated, (req, res) => {
   VIP.findOne({ user_pk: req.user._id })
     .then((_vip) => {
       if (_vip) {

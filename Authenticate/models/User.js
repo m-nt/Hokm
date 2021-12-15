@@ -42,6 +42,10 @@ const UserSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
+  token: {
+    type: String,
+    default: "",
+  },
 });
 
 const User = mongoose.model("User", UserSchema);

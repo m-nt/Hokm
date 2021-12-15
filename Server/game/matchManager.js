@@ -2,8 +2,7 @@ const { Server } = require("socket.io");
 const { Socket } = require("socket.io");
 const User = require("../models/User");
 const Game = require("./game");
-const { RandomAlphabet } = require("../tools/utils");
-
+const { RandomAlphabet, Logger } = require("../tools/utils");
 module.exports = class MatchManager {
   constructor(/** @type {Server} */ io) {
     this.io = io;
@@ -14,7 +13,7 @@ module.exports = class MatchManager {
   ReadySignal(/** @type {Socket} */ socket, data) {
     let roomName = this.rooms[socket.id];
     let readySignal = this.games[roomName].readySignal;
-    console.log(`ReadySignal: [${readySignal}] by: [${socket.id}] in: [${roomName}]`);
+    Logger(`ReadySignal: [${readySignal}] by: [${socket.id}] in: [${roomName}]`);
     if (readySignal == 3) {
       this.games[roomName].next(data);
     } else {
@@ -26,18 +25,18 @@ module.exports = class MatchManager {
 
     if (data) {
       if (data.pn == this.games[roomName].stage.nextPlayer) {
-        console.log("stage triggered by player number:[" + data.pn.toString() + "]");
+        Logger("\nstage triggered by player number:[" + data.pn.toString() + "]");
         this.games[roomName].next(data);
       }
     } else {
-      console.log("stage triggered by player number:[-1]");
+      Logger("stage triggered by player number:[-1]");
       this.games[roomName].next({ pn: -1, cd: -1 });
     }
   }
   PlayerReadyCustom(/** @type {User} */ player) {
     this.MakeAMatch(player, false);
-    console.log("-------------- make a match/ Custom --------------");
-    console.log("player: " + player.name);
+    let loger = "-------------- make a match/ Custom --------------\n" + "player: " + player.name;
+    Logger(loger);
   }
   PlayerJoinCustom(/** @type {User} */ player, room) {
     let plyr = this.games[room].addPlayer(player);
@@ -70,18 +69,11 @@ module.exports = class MatchManager {
     }
   }
   PlayerReady(/** @type {User} */ player) {
-    //console.log(this.games);
     if (this.findSpot(player)) {
-      console.log("-------------- find a spot --------------");
-      // console.log(this.games);
-      // console.log(this.rooms);
-      console.log(player.name);
+      Logger(`-------------- find a spot --------------\nPlayer: ${player.name}`);
     } else {
       this.MakeAMatch(player, true);
-      console.log("-------------- make a match/ Random --------------");
-      // console.log(this.games);
-      // console.log(this.rooms);
-      console.log(player.name);
+      Logger(`-------------- make a match/ Random --------------\nPlayer: ${player.name}`);
     }
   }
   MakeAMatch(/** @type {User} */ player, custom) {
@@ -157,7 +149,7 @@ module.exports = class MatchManager {
         this.io.to(roomName).emit("GameDestroied");
       }
       Object.values(this.games).forEach((game) => {
-        console.log(`game id(${game.room}) with:${game.gameState} status`);
+        Logger(`game id(${game.room}) with:${game.gameState} status`);
       });
     }
   }
@@ -189,7 +181,7 @@ module.exports = class MatchManager {
     }
     delete this.players[socket.id];
     Object.values(this.games).forEach((game) => {
-      console.log(`game id(${game.room}) with:${game.gameState} status`);
+      Logger(`game id(${game.room}) with:${game.gameState} status`);
     });
   }
 };

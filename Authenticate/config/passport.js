@@ -32,7 +32,7 @@ module.exports = (passport) => {
         passReqToCallback: true,
       },
       function (req, token, done) {
-        User.findById({ _id: req.user._id }, function (err, user) {
+        User.findOne({ token: token }, function (err, user) {
           if (err) {
             console.log(err);
             return done(err);

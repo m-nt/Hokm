@@ -42,6 +42,7 @@ router.post("/init", IsAuthenticated, (req, res) => {
 router.get("/callback", (req, res) => {
   Authority = req.query.Authority;
   Status = req.query.Status;
+  let Ref_id = "";
   if (Authority == "") {
     return res.sendFile("views/unseccesful.html", { root: __dirname });
   }
@@ -76,6 +77,7 @@ router.get("/callback", (req, res) => {
             pay.card_pan = data.card_pan;
             pay.card_hash = data.card_hash;
             pay.ref_id = data.ref_id;
+            Ref_id = data.ref_id;
             pay.save();
             switch (pay.description) {
               case "1M":
@@ -127,19 +129,24 @@ router.get("/callback", (req, res) => {
                   });
                 break;
             }
-            res.sendFile("views/seccesful.html", { root: __dirname });
+            res.send(require("./views/seccesful")(data.ref_id));
+            //res.sendFile("views/seccesful.html", { root: __dirname });
           } else {
-            res.sendFile("views/unseccesful.html", { root: __dirname });
+            res.send(require("./views/unseccesful")(data.ref_id));
+            //res.sendFile("views/unseccesful.html", { root: __dirname });
           }
         })
         .catch((err) => {
-          res.sendFile("views/unseccesful.html", { root: __dirname });
+          res.send(require("./views/unseccesful")(data.ref_id));
+          //res.sendFile("views/unseccesful.html", { root: __dirname });
         });
     });
   } else if (Status === "NOK") {
-    res.sendFile("views/unseccesful.html", { root: __dirname });
+    res.send(require("./views/unseccesful")(data.ref_id));
+    //res.sendFile("views/unseccesful.html", { root: __dirname });
   } else {
-    res.sendFile("views/unseccesful.html", { root: __dirname });
+    res.send(require("./views/unseccesful")(data.ref_id));
+    //res.sendFile("views/unseccesful.html", { root: __dirname });
   }
 });
 module.exports = router;

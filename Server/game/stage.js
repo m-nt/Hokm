@@ -1,3 +1,4 @@
+const { Logger } = require("../tools/utils");
 module.exports = class Stage {
   StageEnum = {
     STAGE0: "0,idle",
@@ -204,7 +205,7 @@ module.exports = class Stage {
     };
   }
   Logger(data) {
-    console.log(`
+    Logger(`
     ************************** stage: ${this.stage} ****************************
     [+]data: {pn:${data.pn}, cd:${data.cd}} - msg:[${this.msg}] 
     [+]played player:[${this.playedPlayer}] - next player:[${this.nextPlayer}]
