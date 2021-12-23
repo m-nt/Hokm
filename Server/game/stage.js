@@ -202,6 +202,7 @@ module.exports = class Stage {
       teamCount: this.teamCount,
       teamScore: this.teamScore,
       hand: this.hand,
+      cardsOnIndex: this.cardsOnIndex,
     };
   }
   Logger(data) {
@@ -227,7 +228,7 @@ module.exports = class Stage {
     this.stage = this.StageEnum.STAGE2;
     if (this.WitchTeam(this.ruler, true) == team) {
       if (this.ruler == 3) {
-        this.ruler == 0;
+        this.ruler = 0;
       } else {
         this.ruler++;
       }

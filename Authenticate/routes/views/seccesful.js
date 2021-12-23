@@ -106,7 +106,7 @@ module.exports = (ref_id) => {
               <div class="modal-body">
                 <p class="text-center">عملیات پرداخت موفقیت آمیز بود</p>
                 <!-- <p class="text-center">در صورت کسر وجه از حساب بانکی، طی ۷۲ ساعت آینده وجه تراکنش به حساب‌تان برمی‌گردد</p> -->
-                <p>کد پیگیری ${ref_id}</p>
+                <p class="text-center">کد پیگیری ${ref_id}</p>
                 </div>
               <div class="modal-footer">
                 <button class="btn btn-danger btn-block">

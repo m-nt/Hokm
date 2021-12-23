@@ -6,6 +6,10 @@
   "scripts": {
     "test": "nodemon app"
   },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
   "dependencies": {
     "axios": "*",
     "bcryptjs": "*",

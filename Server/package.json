@@ -7,6 +7,10 @@
     "test": "nodemon server",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
   "dependencies": {
     "appmetrics-dash": "*",
     "connect-flash": "*",

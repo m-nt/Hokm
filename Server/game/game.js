@@ -124,9 +124,9 @@ module.exports = class Game {
         let hokms = this.DetectType(cards, result.hokm);
         //let rad_hold = [...cards.filter(n=>!hands.includes(n))]
         //let rad = [...rad_hold.filter(n=>!hokms.includes(n))]
-        if (hands.length > 0 && leng < 13) {
+        if (hands.length > 0 && (leng < 13 || result.cardsOnIndex > 0)) {
           res = hands[Math.floor(Math.random() * hands.length)];
-        } else if (hokms.length > 0 && leng < 13) {
+        } else if (hokms.length > 0 && (leng < 13 || result.cardsOnIndex > 0)) {
           res = hokms[Math.floor(Math.random() * hokms.length)];
         } else {
           res = cards[Math.floor(Math.random() * cards.length)];
@@ -136,7 +136,7 @@ module.exports = class Game {
     Logger(
       `AI Decide:(${res})\ncards length:${leng} - stage:${stage}\ncards:[${cards}]\nhands:[${this.DetectType(
         cards,
-        result.hands
+        result.hand
       )}]\nhokms:[${this.DetectType(cards, result.hokm)}]`
     );
     return res;

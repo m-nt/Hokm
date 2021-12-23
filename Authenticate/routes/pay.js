@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const axios = require("axios").default;
-const { merchant_id, callback_url, metadata, PaymentURLs } = require("../../conf.json");
+const { merchant_id, callback_url, metadata, PaymentURLs } = require("../conf.json");
 const Pay = require("../models/Payments");
 const { IsAuthenticated } = require("../config/Auth");
 const User = require("../models/User");
@@ -142,10 +142,10 @@ router.get("/callback", (req, res) => {
         });
     });
   } else if (Status === "NOK") {
-    res.send(require("./views/unseccesful")(data.ref_id));
+    res.send(require("./views/unseccesful")(ref_id));
     //res.sendFile("views/unseccesful.html", { root: __dirname });
   } else {
-    res.send(require("./views/unseccesful")(data.ref_id));
+    res.send(require("./views/unseccesful")(ref_id));
     //res.sendFile("views/unseccesful.html", { root: __dirname });
   }
 });
