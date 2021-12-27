@@ -10,8 +10,8 @@ const UserSchema = new mongoose.Schema({
     required: true,
   },
   Avatar: {
-    type: Buffer,
-    required: false,
+    data: Buffer,
+    contentType: String,
   },
   Curency: {
     type: Number,
@@ -40,6 +40,10 @@ const UserSchema = new mongoose.Schema({
   Debt: {
     type: Number,
     default: 0,
+  },
+  role: {
+    type: String,
+    default: "user",
   },
 });
 

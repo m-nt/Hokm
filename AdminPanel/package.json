@@ -1,0 +1,25 @@
+{
+  "name": "adminpanel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "admin.js",
+  "scripts": {
+    "test": "nodemon admin.js"
+  },
+  "dependencies": {
+    "@adminjs/express": "^4.0.1",
+    "@adminjs/mongoose": "^2.0.0",
+    "adminjs": "^5.3.3",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.2",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.1.3",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "author": "",
+  "license": "ISC"
+}

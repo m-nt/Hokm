@@ -79,7 +79,9 @@ module.exports = class Game {
               cd: this.AIdecision(result),
             };
             console.log("[*]stagte triggered Timeout");
-            this.next(data);
+            if (result.msg != "end") {
+              this.next(data);
+            }
           },
           this.stage.stage == this.stage.StageEnum.STAGE5
             ? this.players[this.stage.nextPlayer].timeout

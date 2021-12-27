@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongose = require("mongoose");
 const session = require("express-session");
+const MongoStore = require("connect-mongo");
 const passport = require("passport");
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -18,7 +19,9 @@ require("./config/passport")(passport);
 //mongose connection
 mongose
   .connect(URL, Options)
-  .then(() => console.log(`mongoose conected to Data Base...`))
+  .then((db) => {
+    console.log(`mongoose conected to Data Base...`);
+  })
   .catch((err) => console.log(err));
 
 //Body Parser
@@ -32,10 +35,11 @@ app.use(cors());
 app.use(
   session({
     secret: "secret",
-    resave: true,
+    resave: false,
     saveUninitialized: true,
+    store: MongoStore.create({ mongoUrl: URL, ttl: 30 * 24 * 60 * 60 }),
     cookie: {
-      maxAge: 33333333333,
+      maxAge: 30 * 24 * 60 * 60 * 1000,
     },
   })
 );
