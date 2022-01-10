@@ -70,3 +70,47 @@ mongose
     console.log(`mongoose conected to Data Base...`);
   })
   .catch((err) => console.log(err));
+// every one minutes check for vip expire time
+setInterval(() => {
+  VIP.findOneAndDelete({ expires: { $lt: Date.now() } })
+    .then((vip) => {
+      if (vip) {
+        const del_vip = new DEL_VIP({
+          name: vip.name,
+          user_pk: vip.user_pk,
+          expires: vip.expires,
+        });
+        del_vip.save();
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  FriendListModel.findOneAndDelete({ status: "REJECTED" })
+    .then((list) => {
+      if (list) {
+        const del_frlst = new DeletedFriendListModel({
+          status: list.status,
+          user_pk_sender: list.user_pk_sender,
+          user_pk_reciver: list.user_pk_reciver,
+        });
+        del_frlst.save();
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  User.find({ $or: [{ Debt: { $gt: 0 } }, { Debt: { $lt: 0 } }] })
+    .then((users) => {
+      if (users.length > 0) {
+        users.forEach((user) => {
+          user.Curency += user.Debt;
+          user.Debt = 0;
+          user.save();
+        });
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}, 60000);

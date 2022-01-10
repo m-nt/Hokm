@@ -13,6 +13,7 @@ const VIP = require("./models/vipticket");
 const DEL_VIP = require("./models/deletedvip");
 const FriendListModel = require("./models/friendlist");
 const DeletedFriendListModel = require("./models/deletedfrndlist");
+const User = require("./models/User");
 const cookieParser = require("cookie-parser");
 //passport config
 require("./config/passport")(passport);
@@ -51,37 +52,5 @@ app.use(passport.session());
 //Routes set up
 app.use("/users", require("./routes/user"));
 app.use("/pay", require("./routes/pay"));
-
-// every two minutes check for vip expire time
-setInterval(() => {
-  VIP.findOneAndDelete({ expires: { $lt: Date.now() } })
-    .then((vip) => {
-      if (vip) {
-        const del_vip = new DEL_VIP({
-          name: vip.name,
-          user_pk: vip.user_pk,
-          expires: vip.expires,
-        });
-        del_vip.save();
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-  FriendListModel.findOneAndDelete({ status: "REJECTED" })
-    .then((list) => {
-      if (list) {
-        const del_frlst = new DeletedFriendListModel({
-          status: list.status,
-          user_pk_sender: list.user_pk_sender,
-          user_pk_reciver: list.user_pk_reciver,
-        });
-        del_frlst.save();
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-}, 60000);
 
 app.listen(PORT, console.log(`app listening on port:${PORT}`));
