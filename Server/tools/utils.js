@@ -1,5 +1,9 @@
 const fs = require("fs");
-
+function MongoObjID() {
+  const timestamp = ((new Date().getTime() / 1000) | 0).toString(16);
+  const suffix = "xxxxxxxxxxxxxxxx".replace(/[x]/g, () => ((Math.random() * 16) | 0).toString(16)).toLowerCase();
+  return `${timestamp}${suffix}`;
+}
 function RandomAlphabet(length, isNumber, isSymbol, isUpper) {
   let result = "";
   let Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -32,4 +36,4 @@ function Logger(params) {
     }
   });
 }
-module.exports = { RandomAlphabet, Logger };
+module.exports = { RandomAlphabet, Logger, MongoObjID };

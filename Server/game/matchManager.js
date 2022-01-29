@@ -2,7 +2,7 @@ const { Server } = require("socket.io");
 const { Socket } = require("socket.io");
 const User = require("../models/User");
 const Game = require("./game");
-const { RandomAlphabet, Logger } = require("../tools/utils");
+const { RandomAlphabet, Logger, MongoObjID } = require("../tools/utils");
 module.exports = class MatchManager {
   constructor(/** @type {Server} */ io) {
     this.io = io;
@@ -14,7 +14,7 @@ module.exports = class MatchManager {
     let roomName = this.rooms[socket.id];
     let readySignal = this.games[roomName].readySignal;
     Logger(`ReadySignal: [${readySignal}] by: [${socket.id}] in: [${roomName}]`);
-    if (readySignal == 3) {
+    if (readySignal == this.games[roomName].readylenght - 1) {
       this.games[roomName].next(data);
     } else {
       this.games[roomName].readySignal++;
@@ -90,8 +90,10 @@ module.exports = class MatchManager {
     } else {
       this.io.to(roomName).emit("playerpositionchange", { users: game.playersJson, room: game.room });
     }
+    game.alert = setTimeout(() => {
+      this.AddBot(game);
+    }, 1000 * 1 * 1);
   }
-
   findSpot(/** @type {User} */ player) {
     let res = false;
     Object.entries(this.games).forEach((game, key) => {
@@ -99,10 +101,14 @@ module.exports = class MatchManager {
         let plyr = game[1].addPlayer(player);
         let roomname = game[0];
         if (plyr) {
+          clearTimeout(game[1].alert);
           this.rooms[plyr.socket.id] = roomname;
           player.socket.join(roomname);
           this.io.to(roomname).emit("playersjoined", { users: game[1].playersJson, room: game[1].room });
           res = true;
+          game[1].alert = setTimeout(() => {
+            this.AddBot(game[1]);
+          }, 1000 * 1 * 1);
           return true;
         }
       }
@@ -122,9 +128,11 @@ module.exports = class MatchManager {
     let roomName = this.rooms[socket.id];
     if (roomName) {
       Object.entries(this.games[roomName].players).forEach((item) => {
-        if (item[1].socket.id == socket.id) {
-          delete this.games[roomName].players[item[0]];
-          delete this.rooms[socket.id];
+        if (item[1].active) {
+          if (item[1].socket.id == socket.id) {
+            delete this.games[roomName].players[item[0]];
+            delete this.rooms[socket.id];
+          }
         }
       });
       if (socket.id in this.players) {
@@ -157,10 +165,12 @@ module.exports = class MatchManager {
     let roomName = this.rooms[socket.id];
     if (roomName) {
       Object.entries(this.games[roomName].players).forEach((user, key) => {
-        if (user[1].socket.id == socket.id) {
-          this.games[roomName].players[user[0]].timeout = 3000;
-          this.games[roomName].players[user[0]].active = false;
-          return true;
+        if (user[1].active) {
+          if (user[1].socket.id == socket.id) {
+            this.games[roomName].players[user[0]].timeout = 3000;
+            this.games[roomName].players[user[0]].active = false;
+            return true;
+          }
         }
       });
       if (this.games[roomName].gameState == this.games[roomName].State.LOBBY) {
@@ -183,5 +193,17 @@ module.exports = class MatchManager {
     Object.values(this.games).forEach((game) => {
       Logger(`game id(${game.room}) with:${game.gameState} status`);
     });
+  }
+  AddBot(/** @type {Game} */ game) {
+    let playerbot = new User("player_" + RandomAlphabet(5, true, false, false), MongoObjID());
+    playerbot.timeout = 3000;
+    playerbot.active = false;
+    let plyr = game.addPlayer(playerbot);
+    if (plyr) {
+      this.io.to(game.room).emit("playersjoined", { users: game.playersJson, room: game.room });
+      game.alert = setTimeout(() => {
+        this.AddBot(game);
+      }, 1000 * 1 * 1);
+    }
   }
 };

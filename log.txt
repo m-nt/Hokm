@@ -87,3 +87,3914 @@ player: ali1
 player: ali1
 -------------- make a match/ Custom --------------
 player: ali1
+-------------- make a match/ Random --------------
+Player: ali
+-------------- make a match/ Random --------------
+Player: ali
+-------------- make a match/ Random --------------
+Player: ali
+-------------- make a match/ Random --------------
+Player: ali
+game id(EfyMc4ZXlQF) with:lobby status
+game id(EfyMc4ZXlQF) with:lobby status
+game id(EfyMc4ZXlQF) with:lobby status
+game id(EfyMc4ZXlQF) with:lobby status
+-------------- make a match/ Random --------------
+Player: ali
+ReadySignal: [0] by: [B-p1PeIa5Eb4TW-YAAAP] in: [Dq@D^rRbjB5]
+-------------- make a match/ Random --------------
+Player: ali
+-------------- make a match/ Random --------------
+Player: ali
+ReadySignal: [0] by: [zmYof8MOadTiN14pAAAL] in: [KhPoBYihu$p]
+/////////////////////// Game State: LOBBY /////////////////////////
+
+    ************************** stage: 0,idle ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+ReadySignal: [0] by: [zmYof8MOadTiN14pAAAL] in: [KhPoBYihu$p]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [407,403,110,112]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [113,208,213,211]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [305,306,308,202]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [412,313,214,312]
+    [+]ruler:[2] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:2
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,303,403,310
+    [+]Player 1:314,307,409,414,311
+    [+]Player 2:114,209,207,308,107
+    [+]Player 3:203,208,407,211,410
+    ****************************************************************************
+    
+AI Decide:(107)
+cards length:5 - stage:3
+cards:[114,209,207,308,107]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:2, cd:107} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,303,403,310
+    [+]Player 1:314,307,409,414,311
+    [+]Player 2:114,209,207,308,107
+    [+]Player 3:203,208,407,211,410
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:5 - stage:4
+cards:[114,209,207,308,107]
+hands:[]
+hokms:[114,107]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 4,send cards 4 by 4 ****************************
+    [+]data: {pn:2, cd:0} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,303,403,310,213,111,312,105
+    [+]Player 1:314,307,409,414,311,112,306,210,412
+    [+]Player 2:114,209,207,308,107,205,305,206,304
+    [+]Player 3:203,208,407,211,410,411,104,309,313
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:9 - stage:4
+cards:[114,209,207,308,107,205,305,206,304]
+hands:[]
+hokms:[114,107]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:0} - msg:[OK4] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,303,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:314,307,409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,308,107,205,305,206,304,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,309,313,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(304)
+cards length:13 - stage:5
+cards:[114,209,207,308,107,205,305,206,304,109,402,405,110]
+hands:[]
+hokms:[114,107,109,110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:304} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,0,304,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,303,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:314,307,409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,308,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,309,313,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(313)
+cards length:13 - stage:5
+cards:[203,208,407,211,410,411,104,309,313,202,212,404,108]
+hands:[309,313]
+hokms:[104,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:313} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,304,313]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,303,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:314,307,409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,308,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,309,202,212,404,108
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:303} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [303,0,304,313]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:314,307,409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,308,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,309,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(314)
+cards length:13 - stage:5
+cards:[314,307,409,414,311,112,306,210,412,204,113,103,413]
+hands:[314,307,311,306]
+hokms:[112,113,103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:314} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [303,314,304,313]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:307,409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,308,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,309,202,212,404,108
+    ****************************************************************************
+    
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:307} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [0,307,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,308,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,309,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(307)
+cards length:12 - stage:5
+cards:[307,409,414,311,112,306,210,412,204,113,103,413]
+hands:[307,311,306]
+hokms:[112,113,103]
+AI Decide:(308)
+cards length:12 - stage:5
+cards:[114,209,207,308,107,205,305,206,109,402,405,110]
+hands:[308,305]
+hokms:[114,107,109,110]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:308} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,307,308,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,309,202,212,404,108
+    ****************************************************************************
+    
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+AI Decide:(309)
+cards length:12 - stage:5
+cards:[203,208,407,211,410,411,104,309,202,212,404,108]
+hands:[309]
+hokms:[104,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:309} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,307,308,309]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,310,213,111,312,105,102,214,302,406
+    [+]Player 1:409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:310} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [310,307,308,309]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,213,111,312,105,102,214,302,406
+    [+]Player 1:409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:214} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [214,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,213,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,210,412,204,113,103,413
+    [+]Player 2:114,209,207,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(204)
+cards length:11 - stage:5
+cards:[409,414,311,112,306,210,412,204,113,103,413]
+hands:[210,204]
+hokms:[112,113,103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:204} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [214,204,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,213,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,210,412,113,103,413
+    [+]Player 2:114,209,207,107,205,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(205)
+cards length:11 - stage:5
+cards:[114,209,207,107,205,305,206,109,402,405,110]
+hands:[209,207,205,206]
+hokms:[114,107,109,110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:205} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [214,204,205,0]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,213,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,210,412,113,103,413
+    [+]Player 2:114,209,207,107,305,206,109,402,405,110
+    [+]Player 3:203,208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(203)
+cards length:11 - stage:5
+cards:[203,208,407,211,410,411,104,202,212,404,108]
+hands:[203,208,211,202,212]
+hokms:[104,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:203} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [214,204,205,203]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,213,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,210,412,113,103,413
+    [+]Player 2:114,209,207,107,305,206,109,402,405,110
+    [+]Player 3:208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:213} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [213,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,210,412,113,103,413
+    [+]Player 2:114,209,207,107,305,206,109,402,405,110
+    [+]Player 3:208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(210)
+cards length:10 - stage:5
+cards:[409,414,311,112,306,210,412,113,103,413]
+hands:[210]
+hokms:[112,113,103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:210} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [213,210,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,412,113,103,413
+    [+]Player 2:114,209,207,107,305,206,109,402,405,110
+    [+]Player 3:208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(207)
+cards length:10 - stage:5
+cards:[114,209,207,107,305,206,109,402,405,110]
+hands:[209,207,206]
+hokms:[114,107,109,110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:207} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [213,210,207,0]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,412,113,103,413
+    [+]Player 2:114,209,107,305,206,109,402,405,110
+    [+]Player 3:208,407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(208)
+cards length:10 - stage:5
+cards:[208,407,211,410,411,104,202,212,404,108]
+hands:[208,211,202,212]
+hokms:[104,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:208} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [213,210,207,208]
+    [+]ruler:[2] - hokm:[100] - hand:[200]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,312,105,102,302,406
+    [+]Player 1:409,414,311,112,306,412,113,103,413
+    [+]Player 2:114,209,107,305,206,109,402,405,110
+    [+]Player 3:407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:312} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [312,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,105,102,302,406
+    [+]Player 1:409,414,311,112,306,412,113,103,413
+    [+]Player 2:114,209,107,305,206,109,402,405,110
+    [+]Player 3:407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(311)
+cards length:9 - stage:5
+cards:[409,414,311,112,306,412,113,103,413]
+hands:[311,306]
+hokms:[112,113,103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:311} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [312,311,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,105,102,302,406
+    [+]Player 1:409,414,112,306,412,113,103,413
+    [+]Player 2:114,209,107,305,206,109,402,405,110
+    [+]Player 3:407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(305)
+cards length:9 - stage:5
+cards:[114,209,107,305,206,109,402,405,110]
+hands:[305]
+hokms:[114,107,109,110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:305} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [312,311,305,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,105,102,302,406
+    [+]Player 1:409,414,112,306,412,113,103,413
+    [+]Player 2:114,209,107,206,109,402,405,110
+    [+]Player 3:407,211,410,411,104,202,212,404,108
+    ****************************************************************************
+    
+AI Decide:(108)
+cards length:9 - stage:5
+cards:[407,211,410,411,104,202,212,404,108]
+hands:[]
+hokms:[104,108]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:108} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [312,311,305,108]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,105,102,302,406
+    [+]Player 1:409,414,112,306,412,113,103,413
+    [+]Player 2:114,209,107,206,109,402,405,110
+    [+]Player 3:407,211,410,411,104,202,212,404
+    ****************************************************************************
+    
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+AI Decide:(104)
+cards length:8 - stage:5
+cards:[407,211,410,411,104,202,212,404]
+hands:[]
+hokms:[104]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:104} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,104]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,106,403,111,105,102,302,406
+    [+]Player 1:409,414,112,306,412,113,103,413
+    [+]Player 2:114,209,107,206,109,402,405,110
+    [+]Player 3:407,211,410,411,202,212,404
+    ****************************************************************************
+    
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+stage triggered by player number:[0]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:106} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [106,0,0,104]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,102,302,406
+    [+]Player 1:409,414,112,306,412,113,103,413
+    [+]Player 2:114,209,107,206,109,402,405,110
+    [+]Player 3:407,211,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(113)
+cards length:8 - stage:5
+cards:[409,414,112,306,412,113,103,413]
+hands:[112,113,103]
+hokms:[112,113,103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:113} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [106,113,0,104]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,102,302,406
+    [+]Player 1:409,414,112,306,412,103,413
+    [+]Player 2:114,209,107,206,109,402,405,110
+    [+]Player 3:407,211,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(107)
+cards length:8 - stage:5
+cards:[114,209,107,206,109,402,405,110]
+hands:[114,107,109,110]
+hokms:[114,107,109,110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:107} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [106,113,107,104]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,102,302,406
+    [+]Player 1:409,414,112,306,412,103,413
+    [+]Player 2:114,209,206,109,402,405,110
+    [+]Player 3:407,211,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(112)
+cards length:7 - stage:5
+cards:[409,414,112,306,412,103,413]
+hands:[112,103]
+hokms:[112,103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:112} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [0,112,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,102,302,406
+    [+]Player 1:409,414,306,412,103,413
+    [+]Player 2:114,209,206,109,402,405,110
+    [+]Player 3:407,211,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(109)
+cards length:7 - stage:5
+cards:[114,209,206,109,402,405,110]
+hands:[114,109,110]
+hokms:[114,109,110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:109} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,112,109,0]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,102,302,406
+    [+]Player 1:409,414,306,412,103,413
+    [+]Player 2:114,209,206,402,405,110
+    [+]Player 3:407,211,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(211)
+cards length:7 - stage:5
+cards:[407,211,410,411,202,212,404]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:211} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,112,109,211]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,102,302,406
+    [+]Player 1:409,414,306,412,103,413
+    [+]Player 2:114,209,206,402,405,110
+    [+]Player 3:407,410,411,202,212,404
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:102} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [102,112,109,211]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,302,406
+    [+]Player 1:409,414,306,412,103,413
+    [+]Player 2:114,209,206,402,405,110
+    [+]Player 3:407,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(103)
+cards length:6 - stage:5
+cards:[409,414,306,412,103,413]
+hands:[103]
+hokms:[103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:103} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [0,103,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,302,406
+    [+]Player 1:409,414,306,412,413
+    [+]Player 2:114,209,206,402,405,110
+    [+]Player 3:407,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(114)
+cards length:6 - stage:5
+cards:[114,209,206,402,405,110]
+hands:[114,110]
+hokms:[114,110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:114} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,103,114,0]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,302,406
+    [+]Player 1:409,414,306,412,413
+    [+]Player 2:209,206,402,405,110
+    [+]Player 3:407,410,411,202,212,404
+    ****************************************************************************
+    
+AI Decide:(404)
+cards length:6 - stage:5
+cards:[407,410,411,202,212,404]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:404} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,103,114,404]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,105,302,406
+    [+]Player 1:409,414,306,412,413
+    [+]Player 2:209,206,402,405,110
+    [+]Player 3:407,410,411,202,212
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:105} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [105,103,114,404]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,302,406
+    [+]Player 1:409,414,306,412,413
+    [+]Player 2:209,206,402,405,110
+    [+]Player 3:407,410,411,202,212
+    ****************************************************************************
+    
+AI Decide:(110)
+cards length:5 - stage:5
+cards:[209,206,402,405,110]
+hands:[110]
+hokms:[110]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:110} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,0,110,0]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,302,406
+    [+]Player 1:409,414,306,412,413
+    [+]Player 2:209,206,402,405
+    [+]Player 3:407,410,411,202,212
+    ****************************************************************************
+    
+AI Decide:(407)
+cards length:5 - stage:5
+cards:[407,410,411,202,212]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:407} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,110,407]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,111,302,406
+    [+]Player 1:409,414,306,412,413
+    [+]Player 2:209,206,402,405
+    [+]Player 3:410,411,202,212
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:111} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [111,0,110,407]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,302,406
+    [+]Player 1:409,414,306,412,413
+    [+]Player 2:209,206,402,405
+    [+]Player 3:410,411,202,212
+    ****************************************************************************
+    
+AI Decide:(306)
+cards length:5 - stage:5
+cards:[409,414,306,412,413]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:306} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [111,306,110,407]
+    [+]ruler:[2] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,302,406
+    [+]Player 1:409,414,412,413
+    [+]Player 2:209,206,402,405
+    [+]Player 3:410,411,202,212
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:302} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [302,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,406
+    [+]Player 1:409,414,412,413
+    [+]Player 2:209,206,402,405
+    [+]Player 3:410,411,202,212
+    ****************************************************************************
+    
+AI Decide:(409)
+cards length:4 - stage:5
+cards:[409,414,412,413]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:409} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [302,409,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,406
+    [+]Player 1:414,412,413
+    [+]Player 2:209,206,402,405
+    [+]Player 3:410,411,202,212
+    ****************************************************************************
+    
+AI Decide:(209)
+cards length:4 - stage:5
+cards:[209,206,402,405]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:209} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [302,409,209,0]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,406
+    [+]Player 1:414,412,413
+    [+]Player 2:206,402,405
+    [+]Player 3:410,411,202,212
+    ****************************************************************************
+    
+AI Decide:(411)
+cards length:4 - stage:5
+cards:[410,411,202,212]
+hands:[]
+hokms:[]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:411} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [302,409,209,411]
+    [+]ruler:[2] - hokm:[100] - hand:[300]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:408,403,406
+    [+]Player 1:414,412,413
+    [+]Player 2:206,402,405
+    [+]Player 3:410,202,212
+    ****************************************************************************
+    
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+stage triggered by player number:[0]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:408} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [408,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:403,406
+    [+]Player 1:414,412,413
+    [+]Player 2:206,402,405
+    [+]Player 3:410,202,212
+    ****************************************************************************
+    
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+AI Decide:(414)
+cards length:3 - stage:5
+cards:[414,412,413]
+hands:[414,412,413]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:414} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [408,414,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:403,406
+    [+]Player 1:412,413
+    [+]Player 2:206,402,405
+    [+]Player 3:410,202,212
+    ****************************************************************************
+    
+AI Decide:(405)
+cards length:3 - stage:5
+cards:[206,402,405]
+hands:[402,405]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:405} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [408,414,405,0]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:403,406
+    [+]Player 1:412,413
+    [+]Player 2:206,402
+    [+]Player 3:410,202,212
+    ****************************************************************************
+    
+AI Decide:(410)
+cards length:3 - stage:5
+cards:[410,202,212]
+hands:[410]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:410} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [408,414,405,410]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:403,406
+    [+]Player 1:412,413
+    [+]Player 2:206,402
+    [+]Player 3:202,212
+    ****************************************************************************
+    
+AI Decide:(412)
+cards length:2 - stage:5
+cards:[412,413]
+hands:[412,413]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:412} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [0,412,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:403,406
+    [+]Player 1:413
+    [+]Player 2:206,402
+    [+]Player 3:202,212
+    ****************************************************************************
+    
+AI Decide:(402)
+cards length:2 - stage:5
+cards:[206,402]
+hands:[402]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:402} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,412,402,0]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:403,406
+    [+]Player 1:413
+    [+]Player 2:206
+    [+]Player 3:202,212
+    ****************************************************************************
+    
+AI Decide:(212)
+cards length:2 - stage:5
+cards:[202,212]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:212} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,412,402,212]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:403,406
+    [+]Player 1:413
+    [+]Player 2:206
+    [+]Player 3:202
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:403} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [403,412,402,212]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:406
+    [+]Player 1:413
+    [+]Player 2:206
+    [+]Player 3:202
+    ****************************************************************************
+    
+AI Decide:(413)
+cards length:1 - stage:5
+cards:[413]
+hands:[413]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:413} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [0,413,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:406
+    [+]Player 1:
+    [+]Player 2:206
+    [+]Player 3:202
+    ****************************************************************************
+    
+AI Decide:(206)
+cards length:1 - stage:5
+cards:[206]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:206} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,413,206,0]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:406
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:202
+    ****************************************************************************
+    
+AI Decide:(202)
+cards length:1 - stage:5
+cards:[202]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:202} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,413,206,202]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:406
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 6,reset the hand ****************************
+    [+]data: {pn:0, cd:406} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [406,413,206,202]
+    [+]ruler:[2] - hokm:[100] - hand:[400]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[6] - team1:[7]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:6
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:1, cd:0} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[120000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406
+    [+]Player 1:312,210,309,203,202
+    [+]Player 2:308,208,112,303,313
+    [+]Player 3:103,102,113,310,411
+    ****************************************************************************
+    
+AI Decide:(103)
+cards length:5 - stage:3
+cards:[103,102,113,310,411]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:3, cd:103} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406
+    [+]Player 1:312,210,309,203,202
+    [+]Player 2:308,208,112,303,313
+    [+]Player 3:103,102,113,310,411
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:5 - stage:4
+cards:[103,102,113,310,411]
+hands:[]
+hokms:[103,102,113]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 4,send cards 4 by 4 ****************************
+    [+]data: {pn:3, cd:0} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406,307,214,204,305
+    [+]Player 1:312,210,309,203,202,205,106,212,407
+    [+]Player 2:308,208,112,303,313,302,213,412,104
+    [+]Player 3:103,102,113,310,411,413,114,211,314
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:9 - stage:4
+cards:[103,102,113,310,411,413,114,211,314]
+hands:[]
+hokms:[103,102,113,114]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:0} - msg:[OK4] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406,307,214,204,305,304,414,207,403
+    [+]Player 1:312,210,309,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,313,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,310,411,413,114,211,314,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(314)
+cards length:13 - stage:5
+cards:[103,102,113,310,411,413,114,211,314,404,108,209,409]
+hands:[]
+hokms:[103,102,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:314} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,314]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406,307,214,204,305,304,414,207,403
+    [+]Player 1:312,210,309,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,313,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,310,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:307} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [307,0,0,314]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406,214,204,305,304,414,207,403
+    [+]Player 1:312,210,309,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,313,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,310,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(312)
+cards length:13 - stage:5
+cards:[312,210,309,203,202,205,106,212,407,405,107,105,410]
+hands:[312,309]
+hokms:[106,107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:312} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [307,312,0,314]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406,214,204,305,304,414,207,403
+    [+]Player 1:210,309,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,313,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,310,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(313)
+cards length:13 - stage:5
+cards:[308,208,112,303,313,302,213,412,104,306,109,111,408]
+hands:[308,303,313,302,306]
+hokms:[112,104,109,111]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:313} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [307,312,313,314]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406,214,204,305,304,414,207,403
+    [+]Player 1:210,309,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,310,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(310)
+cards length:12 - stage:5
+cards:[103,102,113,310,411,413,114,211,404,108,209,409]
+hands:[310]
+hokms:[103,102,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:310} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,310]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,311,110,402,406,214,204,305,304,414,207,403
+    [+]Player 1:210,309,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:311} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [311,0,0,310]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,214,204,305,304,414,207,403
+    [+]Player 1:210,309,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(309)
+cards length:12 - stage:5
+cards:[210,309,203,202,205,106,212,407,405,107,105,410]
+hands:[309]
+hokms:[106,107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:309} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [311,309,0,310]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,214,204,305,304,414,207,403
+    [+]Player 1:210,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,302,213,412,104,306,109,111,408
+    [+]Player 3:103,102,113,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(306)
+cards length:12 - stage:5
+cards:[308,208,112,303,302,213,412,104,306,109,111,408]
+hands:[308,303,302,306]
+hokms:[112,104,109,111]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:306} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [311,309,306,310]
+    [+]ruler:[3] - hokm:[100] - hand:[300]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,214,204,305,304,414,207,403
+    [+]Player 1:210,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,302,213,412,104,109,111,408
+    [+]Player 3:103,102,113,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:214} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [214,0,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,414,207,403
+    [+]Player 1:210,203,202,205,106,212,407,405,107,105,410
+    [+]Player 2:308,208,112,303,302,213,412,104,109,111,408
+    [+]Player 3:103,102,113,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(212)
+cards length:11 - stage:5
+cards:[210,203,202,205,106,212,407,405,107,105,410]
+hands:[210,203,202,205,212]
+hokms:[106,107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:212} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [214,212,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,414,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105,410
+    [+]Player 2:308,208,112,303,302,213,412,104,109,111,408
+    [+]Player 3:103,102,113,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(208)
+cards length:11 - stage:5
+cards:[308,208,112,303,302,213,412,104,109,111,408]
+hands:[208,213]
+hokms:[112,104,109,111]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:208} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [214,212,208,0]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,414,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105,410
+    [+]Player 2:308,112,303,302,213,412,104,109,111,408
+    [+]Player 3:103,102,113,411,413,114,211,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(211)
+cards length:11 - stage:5
+cards:[103,102,113,411,413,114,211,404,108,209,409]
+hands:[211,209]
+hokms:[103,102,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:211} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [214,212,208,211]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,414,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105,410
+    [+]Player 2:308,112,303,302,213,412,104,109,111,408
+    [+]Player 3:103,102,113,411,413,114,404,108,209,409
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:414} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [414,0,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105,410
+    [+]Player 2:308,112,303,302,213,412,104,109,111,408
+    [+]Player 3:103,102,113,411,413,114,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(410)
+cards length:10 - stage:5
+cards:[210,203,202,205,106,407,405,107,105,410]
+hands:[407,405,410]
+hokms:[106,107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:410} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [414,410,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105
+    [+]Player 2:308,112,303,302,213,412,104,109,111,408
+    [+]Player 3:103,102,113,411,413,114,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(408)
+cards length:10 - stage:5
+cards:[308,112,303,302,213,412,104,109,111,408]
+hands:[412,408]
+hokms:[112,104,109,111]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:408} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [414,410,408,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[2] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105
+    [+]Player 2:308,112,303,302,213,412,104,109,111
+    [+]Player 3:103,102,113,411,413,114,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(413)
+cards length:10 - stage:5
+cards:[103,102,113,411,413,114,404,108,209,409]
+hands:[411,413,404,409]
+hokms:[103,102,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:413} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [414,410,408,413]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,406,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105
+    [+]Player 2:308,112,303,302,213,412,104,109,111
+    [+]Player 3:103,102,113,411,114,404,108,209,409
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:406} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [406,0,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,407,405,107,105
+    [+]Player 2:308,112,303,302,213,412,104,109,111
+    [+]Player 3:103,102,113,411,114,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(407)
+cards length:9 - stage:5
+cards:[210,203,202,205,106,407,405,107,105]
+hands:[407,405]
+hokms:[106,107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:407} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [406,407,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,405,107,105
+    [+]Player 2:308,112,303,302,213,412,104,109,111
+    [+]Player 3:103,102,113,411,114,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(412)
+cards length:9 - stage:5
+cards:[308,112,303,302,213,412,104,109,111]
+hands:[412]
+hokms:[112,104,109,111]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:412} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [406,407,412,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[3] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,405,107,105
+    [+]Player 2:308,112,303,302,213,104,109,111
+    [+]Player 3:103,102,113,411,114,404,108,209,409
+    ****************************************************************************
+    
+AI Decide:(409)
+cards length:9 - stage:5
+cards:[103,102,113,411,114,404,108,209,409]
+hands:[411,404,409]
+hokms:[103,102,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:409} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [406,407,412,409]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,405,107,105
+    [+]Player 2:308,112,303,302,213,104,109,111
+    [+]Player 3:103,102,113,411,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(109)
+cards length:8 - stage:5
+cards:[308,112,303,302,213,104,109,111]
+hands:[]
+hokms:[112,104,109,111]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:109} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,0,109,0]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,405,107,105
+    [+]Player 2:308,112,303,302,213,104,111
+    [+]Player 3:103,102,113,411,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(102)
+cards length:8 - stage:5
+cards:[103,102,113,411,114,404,108,209]
+hands:[103,102,113,114,108]
+hokms:[103,102,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:102} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,109,102]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,110,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,405,107,105
+    [+]Player 2:308,112,303,302,213,104,111
+    [+]Player 3:103,113,411,114,404,108,209
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:110} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [110,0,109,102]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[4] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,106,405,107,105
+    [+]Player 2:308,112,303,302,213,104,111
+    [+]Player 3:103,113,411,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(106)
+cards length:8 - stage:5
+cards:[210,203,202,205,106,405,107,105]
+hands:[106,107,105]
+hokms:[106,107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:106} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [110,106,109,102]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207,403
+    [+]Player 1:210,203,202,205,405,107,105
+    [+]Player 2:308,112,303,302,213,104,111
+    [+]Player 3:103,113,411,114,404,108,209
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:403} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [403,0,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207
+    [+]Player 1:210,203,202,205,405,107,105
+    [+]Player 2:308,112,303,302,213,104,111
+    [+]Player 3:103,113,411,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(405)
+cards length:7 - stage:5
+cards:[210,203,202,205,405,107,105]
+hands:[405]
+hokms:[107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:405} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [403,405,0,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207
+    [+]Player 1:210,203,202,205,107,105
+    [+]Player 2:308,112,303,302,213,104,111
+    [+]Player 3:103,113,411,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(111)
+cards length:7 - stage:5
+cards:[308,112,303,302,213,104,111]
+hands:[]
+hokms:[112,104,111]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:111} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [403,405,111,0]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[5] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207
+    [+]Player 1:210,203,202,205,107,105
+    [+]Player 2:308,112,303,302,213,104
+    [+]Player 3:103,113,411,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(411)
+cards length:7 - stage:5
+cards:[103,113,411,114,404,108,209]
+hands:[411,404]
+hokms:[103,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:411} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [403,405,111,411]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207
+    [+]Player 1:210,203,202,205,107,105
+    [+]Player 2:308,112,303,302,213,104
+    [+]Player 3:103,113,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(104)
+cards length:6 - stage:5
+cards:[308,112,303,302,213,104]
+hands:[]
+hokms:[112,104]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:104} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,0,104,0]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207
+    [+]Player 1:210,203,202,205,107,105
+    [+]Player 2:308,112,303,302,213
+    [+]Player 3:103,113,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(113)
+cards length:6 - stage:5
+cards:[103,113,114,404,108,209]
+hands:[103,113,114,108]
+hokms:[103,113,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:113} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,104,113]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,402,204,305,304,207
+    [+]Player 1:210,203,202,205,107,105
+    [+]Player 2:308,112,303,302,213
+    [+]Player 3:103,114,404,108,209
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:402} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [402,0,104,113]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,204,305,304,207
+    [+]Player 1:210,203,202,205,107,105
+    [+]Player 2:308,112,303,302,213
+    [+]Player 3:103,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(107)
+cards length:6 - stage:5
+cards:[210,203,202,205,107,105]
+hands:[107,105]
+hokms:[107,105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:107} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [402,107,104,113]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,204,305,304,207
+    [+]Player 1:210,203,202,205,105
+    [+]Player 2:308,112,303,302,213
+    [+]Player 3:103,114,404,108,209
+    ****************************************************************************
+    
+AI Decide:(114)
+cards length:5 - stage:5
+cards:[103,114,404,108,209]
+hands:[103,114,108]
+hokms:[103,114,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:114} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,114]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,204,305,304,207
+    [+]Player 1:210,203,202,205,105
+    [+]Player 2:308,112,303,302,213
+    [+]Player 3:103,404,108,209
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:204} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [204,0,0,114]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,305,304,207
+    [+]Player 1:210,203,202,205,105
+    [+]Player 2:308,112,303,302,213
+    [+]Player 3:103,404,108,209
+    ****************************************************************************
+    
+AI Decide:(105)
+cards length:5 - stage:5
+cards:[210,203,202,205,105]
+hands:[105]
+hokms:[105]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:105} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [204,105,0,114]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[2]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,305,304,207
+    [+]Player 1:210,203,202,205
+    [+]Player 2:308,112,303,302,213
+    [+]Player 3:103,404,108,209
+    ****************************************************************************
+    
+AI Decide:(112)
+cards length:5 - stage:5
+cards:[308,112,303,302,213]
+hands:[112]
+hokms:[112]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:112} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [204,105,112,114]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,305,304,207
+    [+]Player 1:210,203,202,205
+    [+]Player 2:308,303,302,213
+    [+]Player 3:103,404,108,209
+    ****************************************************************************
+    
+AI Decide:(108)
+cards length:4 - stage:5
+cards:[103,404,108,209]
+hands:[103,108]
+hokms:[103,108]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:108} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,108]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:206,305,304,207
+    [+]Player 1:210,203,202,205
+    [+]Player 2:308,303,302,213
+    [+]Player 3:103,404,209
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:206} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [206,0,0,108]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,304,207
+    [+]Player 1:210,203,202,205
+    [+]Player 2:308,303,302,213
+    [+]Player 3:103,404,209
+    ****************************************************************************
+    
+AI Decide:(202)
+cards length:4 - stage:5
+cards:[210,203,202,205]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:202} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [206,202,0,108]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[3]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,304,207
+    [+]Player 1:210,203,205
+    [+]Player 2:308,303,302,213
+    [+]Player 3:103,404,209
+    ****************************************************************************
+    
+AI Decide:(308)
+cards length:4 - stage:5
+cards:[308,303,302,213]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:308} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [206,202,308,108]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,304,207
+    [+]Player 1:210,203,205
+    [+]Player 2:303,302,213
+    [+]Player 3:103,404,209
+    ****************************************************************************
+    
+AI Decide:(103)
+cards length:3 - stage:5
+cards:[103,404,209]
+hands:[103]
+hokms:[103]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:103} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,103]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,304,207
+    [+]Player 1:210,203,205
+    [+]Player 2:303,302,213
+    [+]Player 3:404,209
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:304} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [304,0,0,103]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,207
+    [+]Player 1:210,203,205
+    [+]Player 2:303,302,213
+    [+]Player 3:404,209
+    ****************************************************************************
+    
+AI Decide:(210)
+cards length:3 - stage:5
+cards:[210,203,205]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:210} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [304,210,0,103]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[4]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,207
+    [+]Player 1:203,205
+    [+]Player 2:303,302,213
+    [+]Player 3:404,209
+    ****************************************************************************
+    
+AI Decide:(213)
+cards length:3 - stage:5
+cards:[303,302,213]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:213} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [304,210,213,103]
+    [+]ruler:[3] - hokm:[100] - hand:[100]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,207
+    [+]Player 1:203,205
+    [+]Player 2:303,302
+    [+]Player 3:404,209
+    ****************************************************************************
+    
+AI Decide:(404)
+cards length:2 - stage:5
+cards:[404,209]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:404} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,404]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:305,207
+    [+]Player 1:203,205
+    [+]Player 2:303,302
+    [+]Player 3:209
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:305} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [305,0,0,404]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:207
+    [+]Player 1:203,205
+    [+]Player 2:303,302
+    [+]Player 3:209
+    ****************************************************************************
+    
+AI Decide:(203)
+cards length:2 - stage:5
+cards:[203,205]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:203} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [305,203,0,404]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[5]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:207
+    [+]Player 1:205
+    [+]Player 2:303,302
+    [+]Player 3:209
+    ****************************************************************************
+    
+AI Decide:(302)
+cards length:2 - stage:5
+cards:[303,302]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:302} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [305,203,302,404]
+    [+]ruler:[3] - hokm:[100] - hand:[400]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:207
+    [+]Player 1:205
+    [+]Player 2:303
+    [+]Player 3:209
+    ****************************************************************************
+    
+AI Decide:(209)
+cards length:1 - stage:5
+cards:[209]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:209} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,209]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:207
+    [+]Player 1:205
+    [+]Player 2:303
+    [+]Player 3:
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:207} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [207,0,0,209]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:
+    [+]Player 1:205
+    [+]Player 2:303
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(205)
+cards length:1 - stage:5
+cards:[205]
+hands:[205]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:205} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [207,205,0,209]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[6] - team1:[6]
+    [+]team Scores: team0:[0] - team1:[1]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:303
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(303)
+cards length:1 - stage:5
+cards:[303]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 6,reset the hand ****************************
+    [+]data: {pn:2, cd:303} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [207,205,303,209]
+    [+]ruler:[3] - hokm:[100] - hand:[200]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[6] - team1:[7]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:6
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:3, cd:0} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[120000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209
+    [+]Player 1:106,411,206,202,406
+    [+]Player 2:109,303,402,407,408
+    [+]Player 3:403,208,205,305,309
+    ****************************************************************************
+    
+AI Decide:(403)
+cards length:5 - stage:3
+cards:[403,208,205,305,309]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:3, cd:403} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209
+    [+]Player 1:106,411,206,202,406
+    [+]Player 2:109,303,402,407,408
+    [+]Player 3:403,208,205,305,309
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:5 - stage:4
+cards:[403,208,205,305,309]
+hands:[]
+hokms:[403]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 4,send cards 4 by 4 ****************************
+    [+]data: {pn:3, cd:0} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209,413,307,210,103
+    [+]Player 1:106,411,206,202,406,203,108,313,112
+    [+]Player 2:109,303,402,407,408,114,304,105,102
+    [+]Player 3:403,208,205,305,309,204,104,213,414
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:9 - stage:4
+cards:[403,208,205,305,309,204,104,213,414]
+hands:[]
+hokms:[403,414]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:0} - msg:[OK4] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[3] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209,413,307,210,103,404,211,302,113
+    [+]Player 1:106,411,206,202,406,203,108,313,112,310,412,111,409
+    [+]Player 2:109,303,402,407,408,114,304,105,102,405,214,107,312
+    [+]Player 3:403,208,205,305,309,204,104,213,414,212,410,207,308
+    ****************************************************************************
+    
+AI Decide:(207)
+cards length:13 - stage:5
+cards:[403,208,205,305,309,204,104,213,414,212,410,207,308]
+hands:[]
+hokms:[403,414,410]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:207} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,207]
+    [+]ruler:[3] - hokm:[400] - hand:[200]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209,413,307,210,103,404,211,302,113
+    [+]Player 1:106,411,206,202,406,203,108,313,112,310,412,111,409
+    [+]Player 2:109,303,402,407,408,114,304,105,102,405,214,107,312
+    [+]Player 3:403,208,205,305,309,204,104,213,414,212,410,308
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:210} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [210,0,0,207]
+    [+]ruler:[3] - hokm:[400] - hand:[200]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209,413,307,103,404,211,302,113
+    [+]Player 1:106,411,206,202,406,203,108,313,112,310,412,111,409
+    [+]Player 2:109,303,402,407,408,114,304,105,102,405,214,107,312
+    [+]Player 3:403,208,205,305,309,204,104,213,414,212,410,308
+    ****************************************************************************
+    
+AI Decide:(203)
+cards length:13 - stage:5
+cards:[106,411,206,202,406,203,108,313,112,310,412,111,409]
+hands:[206,202,203]
+hokms:[411,406,412,409]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:203} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [210,203,0,207]
+    [+]ruler:[3] - hokm:[400] - hand:[200]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209,413,307,103,404,211,302,113
+    [+]Player 1:106,411,206,202,406,108,313,112,310,412,111,409
+    [+]Player 2:109,303,402,407,408,114,304,105,102,405,214,107,312
+    [+]Player 3:403,208,205,305,309,204,104,213,414,212,410,308
+    ****************************************************************************
+    
+AI Decide:(214)
+cards length:13 - stage:5
+cards:[109,303,402,407,408,114,304,105,102,405,214,107,312]
+hands:[214]
+hokms:[402,407,408,405]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:214} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [210,203,214,207]
+    [+]ruler:[3] - hokm:[400] - hand:[200]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209,413,307,103,404,211,302,113
+    [+]Player 1:106,411,206,202,406,108,313,112,310,412,111,409
+    [+]Player 2:109,303,402,407,408,114,304,105,102,405,107,312
+    [+]Player 3:403,208,205,305,309,204,104,213,414,212,410,308
+    ****************************************************************************
+    
+AI Decide:(402)
+cards length:12 - stage:5
+cards:[109,303,402,407,408,114,304,105,102,405,107,312]
+hands:[]
+hokms:[402,407,408,405]
+^^^^^^^^^^^^^^^^ Game State: INGAME[KhPoBYihu$p] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerFyl1de: Offline - id[WoG%*_RtOBN]
+⌊____[2] playerIm5hpb: Offline - id[MkBMnS0igJ_]
+⌊____[3] playerP2obku: Offline - id[CRT9&IIdfO*]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:402} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,0,402,0]
+    [+]ruler:[3] - hokm:[400] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[1] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[2]
+    [+]Player 0:110,306,311,314,209,413,307,103,404,211,302,113
+    [+]Player 1:106,411,206,202,406,108,313,112,310,412,111,409
+    [+]Player 2:109,303,407,408,114,304,105,102,405,107,312
+    [+]Player 3:403,208,205,305,309,204,104,213,414,212,410,308
+    ****************************************************************************
+    
+game id(KhPoBYihu$p) with:ingame status
+-------------- make a match/ Random --------------
+Player: ali
+ReadySignal: [0] by: [JcBzlaPZ7ivYMK7RAAAP] in: [Ldd#*QisgKM]
+/////////////////////// Game State: LOBBY /////////////////////////
+
+    ************************** stage: 0,idle ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+ReadySignal: [0] by: [JcBzlaPZ7ivYMK7RAAAP] in: [Ldd#*QisgKM]
+^^^^^^^^^^^^^^^^ Game State: INGAME[Ldd#*QisgKM] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerYc2b70: Offline - id[NCQOR1t%dtj]
+⌊____[2] playerKuqn4d: Offline - id[U^pCMM98Hl4]
+⌊____[3] playerQcafbf: Offline - id[EW^uNBPbPdn]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [107,208,414,103]
+    [+]ruler:[2] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:2
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[Ldd#*QisgKM] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerYc2b70: Offline - id[NCQOR1t%dtj]
+⌊____[2] playerKuqn4d: Offline - id[U^pCMM98Hl4]
+⌊____[3] playerQcafbf: Offline - id[EW^uNBPbPdn]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,412,111,104,411
+    [+]Player 1:106,309,203,208,112
+    [+]Player 2:406,303,311,103,105
+    [+]Player 3:302,107,211,202,212
+    ****************************************************************************
+    
+AI Decide:(103)
+cards length:5 - stage:3
+cards:[406,303,311,103,105]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[Ldd#*QisgKM] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] playerYc2b70: Offline - id[NCQOR1t%dtj]
+⌊____[2] playerKuqn4d: Offline - id[U^pCMM98Hl4]
+⌊____[3] playerQcafbf: Offline - id[EW^uNBPbPdn]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:2, cd:103} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[100] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,412,111,104,411
+    [+]Player 1:106,309,203,208,112
+    [+]Player 2:406,303,311,103,105
+    [+]Player 3:302,107,211,202,212
+    ****************************************************************************
+    
+game id(Ldd#*QisgKM) with:ingame status
+-------------- make a match/ Random --------------
+Player: ali
+ReadySignal: [0] by: [mBKF20JA7keo4Ht7AAAH] in: [JuxjCO44RpR]
+/////////////////////// Game State: LOBBY /////////////////////////
+
+    ************************** stage: 0,idle ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+^^^^^^^^^^^^^^^^ Game State: INGAME[JuxjCO44RpR] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Iyqzjs: Offline - id[R1DFK77yyhweh37OV2EYeFUln]
+⌊____[2] player_Axiey2: Offline - id[R5frBydCWLCqNmCGDB8hj*mER]
+⌊____[3] player_Zogvd2: Offline - id[T2EzGyc12982%E8#F6WGLpcWw]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [413,207,305,212]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+ReadySignal: [0] by: [mBKF20JA7keo4Ht7AAAH] in: [JuxjCO44RpR]
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[JuxjCO44RpR] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Iyqzjs: Offline - id[R1DFK77yyhweh37OV2EYeFUln]
+⌊____[2] player_Axiey2: Offline - id[R5frBydCWLCqNmCGDB8hj*mER]
+⌊____[3] player_Zogvd2: Offline - id[T2EzGyc12982%E8#F6WGLpcWw]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [414,405,408,107]
+    [+]ruler:[0] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:2
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[JuxjCO44RpR] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Iyqzjs: Offline - id[R1DFK77yyhweh37OV2EYeFUln]
+⌊____[2] player_Axiey2: Offline - id[R5frBydCWLCqNmCGDB8hj*mER]
+⌊____[3] player_Zogvd2: Offline - id[T2EzGyc12982%E8#F6WGLpcWw]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:402,404,409,408,103
+    [+]Player 1:410,209,208,306,109
+    [+]Player 2:107,104,106,304,412
+    [+]Player 3:102,211,113,313,314
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[JuxjCO44RpR] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Iyqzjs: Offline - id[R1DFK77yyhweh37OV2EYeFUln]
+⌊____[2] player_Axiey2: Offline - id[R5frBydCWLCqNmCGDB8hj*mER]
+⌊____[3] player_Zogvd2: Offline - id[T2EzGyc12982%E8#F6WGLpcWw]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:0, cd:414} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:402,404,409,408,103
+    [+]Player 1:410,209,208,306,109
+    [+]Player 2:107,104,106,304,412
+    [+]Player 3:102,211,113,313,314
+    ****************************************************************************
+    
+game id(JuxjCO44RpR) with:ingame status
+AI Decide:(0)
+cards length:5 - stage:4
+cards:[402,404,409,408,103]
+hands:[]
+hokms:[402,404,409,408]
+^^^^^^^^^^^^^^^^ Game State: INGAME[JuxjCO44RpR] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Iyqzjs: Offline - id[R1DFK77yyhweh37OV2EYeFUln]
+⌊____[2] player_Axiey2: Offline - id[R5frBydCWLCqNmCGDB8hj*mER]
+⌊____[3] player_Zogvd2: Offline - id[T2EzGyc12982%E8#F6WGLpcWw]
+
+    ************************** stage: 4,send cards 4 by 4 ****************************
+    [+]data: {pn:0, cd:0} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:402,404,409,408,103,406,203,309,311
+    [+]Player 1:410,209,208,306,109,114,213,312,206
+    [+]Player 2:107,104,106,304,412,105,403,108,305
+    [+]Player 3:102,211,113,313,314,212,414,413,111
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:9 - stage:4
+cards:[402,404,409,408,103,406,203,309,311]
+hands:[]
+hokms:[402,404,409,408,406]
+^^^^^^^^^^^^^^^^ Game State: INGAME[JuxjCO44RpR] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Iyqzjs: Offline - id[R1DFK77yyhweh37OV2EYeFUln]
+⌊____[2] player_Axiey2: Offline - id[R5frBydCWLCqNmCGDB8hj*mER]
+⌊____[3] player_Zogvd2: Offline - id[T2EzGyc12982%E8#F6WGLpcWw]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:0} - msg:[OK4] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:402,404,409,408,103,406,203,309,311,407,207,112,303
+    [+]Player 1:410,209,208,306,109,114,213,312,206,204,307,214,411
+    [+]Player 2:107,104,106,304,412,105,403,108,305,205,110,308,202
+    [+]Player 3:102,211,113,313,314,212,414,413,111,302,310,405,210
+    ****************************************************************************
+    
+game id(JuxjCO44RpR) with:ingame status
+-------------- make a match/ Random --------------
+Player: ali
+ReadySignal: [0] by: [DwEhk529ZlvzHBAtAAAD] in: [NPEm%hUMECy]
+/////////////////////// Game State: LOBBY /////////////////////////
+
+    ************************** stage: 0,idle ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+ReadySignal: [0] by: [DwEhk529ZlvzHBAtAAAD] in: [NPEm%hUMECy]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [412,309,314,307]
+    [+]ruler:[2] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:2
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,408
+    [+]Player 1:311,113,214,203,111
+    [+]Player 2:402,409,309,103,204
+    [+]Player 3:212,306,404,304,414
+    ****************************************************************************
+    
+AI Decide:(409)
+cards length:5 - stage:3
+cards:[402,409,309,103,204]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:2, cd:409} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,408
+    [+]Player 1:311,113,214,203,111
+    [+]Player 2:402,409,309,103,204
+    [+]Player 3:212,306,404,304,414
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:5 - stage:4
+cards:[402,409,309,103,204]
+hands:[]
+hokms:[402,409]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 4,send cards 4 by 4 ****************************
+    [+]data: {pn:2, cd:0} - msg:[] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,408,114,107,411,112
+    [+]Player 1:311,113,214,203,111,106,213,406,206
+    [+]Player 2:402,409,309,103,204,202,412,308,205
+    [+]Player 3:212,306,404,304,414,405,302,108,208
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:9 - stage:4
+cards:[402,409,309,103,204,202,412,308,205]
+hands:[]
+hokms:[402,409,412]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:0} - msg:[OK4] 
+    [+]played player:[2] - next player:[2]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[2] - hokm:[400] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,408,114,107,411,112,410,403,105,314
+    [+]Player 1:311,113,214,203,111,106,213,406,206,109,210,313,305
+    [+]Player 2:402,409,309,103,204,202,412,308,205,102,211,303,207
+    [+]Player 3:212,306,404,304,414,405,302,108,208,413,307,407,104
+    ****************************************************************************
+    
+AI Decide:(412)
+cards length:13 - stage:5
+cards:[402,409,309,103,204,202,412,308,205,102,211,303,207]
+hands:[]
+hokms:[402,409,412]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:2, cd:412} - msg:[] 
+    [+]played player:[2] - next player:[3]
+    [+]Cards on the ground: [0,0,412,0]
+    [+]ruler:[2] - hokm:[400] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,408,114,107,411,112,410,403,105,314
+    [+]Player 1:311,113,214,203,111,106,213,406,206,109,210,313,305
+    [+]Player 2:402,409,309,103,204,202,308,205,102,211,303,207
+    [+]Player 3:212,306,404,304,414,405,302,108,208,413,307,407,104
+    ****************************************************************************
+    
+AI Decide:(413)
+cards length:13 - stage:5
+cards:[212,306,404,304,414,405,302,108,208,413,307,407,104]
+hands:[404,414,405,413,407]
+hokms:[404,414,405,413,407]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:413} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,412,413]
+    [+]ruler:[2] - hokm:[400] - hand:[400]
+    [+]cards index:[2] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,408,114,107,411,112,410,403,105,314
+    [+]Player 1:311,113,214,203,111,106,213,406,206,109,210,313,305
+    [+]Player 2:402,409,309,103,204,202,308,205,102,211,303,207
+    [+]Player 3:212,306,404,304,414,405,302,108,208,307,407,104
+    ****************************************************************************
+    
+AI Decide:(408)
+cards length:13 - stage:5
+cards:[110,209,310,312,408,114,107,411,112,410,403,105,314]
+hands:[408,411,410,403]
+hokms:[408,411,410,403]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:408} - msg:[] 
+    [+]played player:[0] - next player:[1]
+    [+]Cards on the ground: [408,0,412,413]
+    [+]ruler:[2] - hokm:[400] - hand:[400]
+    [+]cards index:[3] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,114,107,411,112,410,403,105,314
+    [+]Player 1:311,113,214,203,111,106,213,406,206,109,210,313,305
+    [+]Player 2:402,409,309,103,204,202,308,205,102,211,303,207
+    [+]Player 3:212,306,404,304,414,405,302,108,208,307,407,104
+    ****************************************************************************
+    
+AI Decide:(406)
+cards length:13 - stage:5
+cards:[311,113,214,203,111,106,213,406,206,109,210,313,305]
+hands:[406]
+hokms:[406]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:406} - msg:[] 
+    [+]played player:[3] - next player:[3]
+    [+]Cards on the ground: [408,406,412,413]
+    [+]ruler:[2] - hokm:[400] - hand:[400]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,114,107,411,112,410,403,105,314
+    [+]Player 1:311,113,214,203,111,106,213,206,109,210,313,305
+    [+]Player 2:402,409,309,103,204,202,308,205,102,211,303,207
+    [+]Player 3:212,306,404,304,414,405,302,108,208,307,407,104
+    ****************************************************************************
+    
+AI Decide:(405)
+cards length:12 - stage:5
+cards:[212,306,404,304,414,405,302,108,208,307,407,104]
+hands:[404,414,405,407]
+hokms:[404,414,405,407]
+^^^^^^^^^^^^^^^^ Game State: INGAME[NPEm%hUMECy] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_C3pbj8: Offline - id[Cns0radw9nphb3yzjezdw1gsp]
+⌊____[2] player_R7vwdo: Offline - id[O2425u40t7k4wm1giipgchr2o]
+⌊____[3] player_Mc04rr: Offline - id[Fzeuzf7zfdev1175v62egunwo]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:3, cd:405} - msg:[] 
+    [+]played player:[3] - next player:[0]
+    [+]Cards on the ground: [0,0,0,405]
+    [+]ruler:[2] - hokm:[400] - hand:[400]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[1]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:110,209,310,312,114,107,411,112,410,403,105,314
+    [+]Player 1:311,113,214,203,111,106,213,206,109,210,313,305
+    [+]Player 2:402,409,309,103,204,202,308,205,102,211,303,207
+    [+]Player 3:212,306,404,304,414,302,108,208,307,407,104
+    ****************************************************************************
+    
+game id(NPEm%hUMECy) with:ingame status
+-------------- make a match/ Random --------------
+Player: ali
+ReadySignal: [0] by: [yN4n2fPiZV6Gu0nlAAAD] in: [XEKwcxqZBI5]
+/////////////////////// Game State: LOBBY /////////////////////////
+
+    ************************** stage: 0,idle ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+ReadySignal: [0] by: [yN4n2fPiZV6Gu0nlAAAD] in: [XEKwcxqZBI5]
+^^^^^^^^^^^^^^^^ Game State: INGAME[XEKwcxqZBI5] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Fxi2ft: Offline - id[61f5870dadfa03376f85bac8]
+⌊____[2] player_Q994bq: Offline - id[61f5870ee660ec0bafdb15d5]
+⌊____[3] player_Tskr0f: Offline - id[61f5870f98015a52dd928266]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [110,106,405,312]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[XEKwcxqZBI5] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Fxi2ft: Offline - id[61f5870dadfa03376f85bac8]
+⌊____[2] player_Q994bq: Offline - id[61f5870ee660ec0bafdb15d5]
+⌊____[3] player_Tskr0f: Offline - id[61f5870f98015a52dd928266]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [414,306,406,107]
+    [+]ruler:[0] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:2
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[XEKwcxqZBI5] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Fxi2ft: Offline - id[61f5870dadfa03376f85bac8]
+⌊____[2] player_Q994bq: Offline - id[61f5870ee660ec0bafdb15d5]
+⌊____[3] player_Tskr0f: Offline - id[61f5870f98015a52dd928266]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:107,408,109,209,307
+    [+]Player 1:311,305,412,409,211
+    [+]Player 2:406,402,309,106,103
+    [+]Player 3:304,405,212,113,308
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[XEKwcxqZBI5] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Fxi2ft: Offline - id[61f5870dadfa03376f85bac8]
+⌊____[2] player_Q994bq: Offline - id[61f5870ee660ec0bafdb15d5]
+⌊____[3] player_Tskr0f: Offline - id[61f5870f98015a52dd928266]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:0, cd:314} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[300] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:107,408,109,209,307
+    [+]Player 1:311,305,412,409,211
+    [+]Player 2:406,402,309,106,103
+    [+]Player 3:304,405,212,113,308
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:5 - stage:4
+cards:[107,408,109,209,307]
+hands:[]
+hokms:[307]
+^^^^^^^^^^^^^^^^ Game State: INGAME[XEKwcxqZBI5] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Fxi2ft: Offline - id[61f5870dadfa03376f85bac8]
+⌊____[2] player_Q994bq: Offline - id[61f5870ee660ec0bafdb15d5]
+⌊____[3] player_Tskr0f: Offline - id[61f5870f98015a52dd928266]
+
+    ************************** stage: 4,send cards 4 by 4 ****************************
+    [+]data: {pn:0, cd:0} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[300] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:107,408,109,209,307,303,111,410,108
+    [+]Player 1:311,305,412,409,211,214,205,105,411
+    [+]Player 2:406,402,309,106,103,414,404,104,202
+    [+]Player 3:304,405,212,113,308,407,306,112,204
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:9 - stage:4
+cards:[107,408,109,209,307,303,111,410,108]
+hands:[]
+hokms:[307,303]
+^^^^^^^^^^^^^^^^ Game State: INGAME[XEKwcxqZBI5] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[6176fd1484db2708905a941c]
+⌊____[1] player_Fxi2ft: Offline - id[61f5870dadfa03376f85bac8]
+⌊____[2] player_Q994bq: Offline - id[61f5870ee660ec0bafdb15d5]
+⌊____[3] player_Tskr0f: Offline - id[61f5870f98015a52dd928266]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:0, cd:0} - msg:[OK4] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[300] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:107,408,109,209,307,303,111,410,108,213,310,210,302
+    [+]Player 1:311,305,412,409,211,214,205,105,411,110,403,413,208
+    [+]Player 2:406,402,309,106,103,414,404,104,202,206,207,102,313
+    [+]Player 3:304,405,212,113,308,407,306,112,204,114,312,314,203
+    ****************************************************************************
+    
+game id(XEKwcxqZBI5) with:ingame status
