@@ -9,6 +9,7 @@ module.exports = class MatchManager {
     this.games = {};
     this.rooms = {};
     this.players = {};
+    this.BotTimerJoin = 10;
   }
   ReadySignal(/** @type {Socket} */ socket, data) {
     let roomName = this.rooms[socket.id];
@@ -64,6 +65,9 @@ module.exports = class MatchManager {
     if (!("4" in this.games[room].players)) {
       this.games[room].ready = true;
       this.io.to(room).emit("customlobbyready");
+      this.games[room].alert = setTimeout(() => {
+        this.AddBot(this.games[room]);
+      }, 1000 * this.BotTimerJoin);
     } else {
       this.io.to(room).emit("customlobbyNOTready");
     }
@@ -91,8 +95,10 @@ module.exports = class MatchManager {
       this.io.to(roomName).emit("playerpositionchange", { users: game.playersJson, room: game.room });
     }
     game.alert = setTimeout(() => {
-      this.AddBot(game);
-    }, 1000 * 1 * 1);
+      if (game.ready == true) {
+        this.AddBot(game);
+      }
+    }, 1000 * this.BotTimerJoin);
   }
   findSpot(/** @type {User} */ player) {
     let res = false;
@@ -108,7 +114,7 @@ module.exports = class MatchManager {
           res = true;
           game[1].alert = setTimeout(() => {
             this.AddBot(game[1]);
-          }, 1000 * 1 * 1);
+          }, 1000 * this.BotTimerJoin);
           return true;
         }
       }
@@ -203,7 +209,7 @@ module.exports = class MatchManager {
       this.io.to(game.room).emit("playersjoined", { users: game.playersJson, room: game.room });
       game.alert = setTimeout(() => {
         this.AddBot(game);
-      }, 1000 * 1 * 1);
+      }, 1000 * this.BotTimerJoin);
     }
   }
 };

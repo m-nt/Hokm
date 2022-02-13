@@ -3998,3 +3998,346 @@ hokms:[307,303]
     ****************************************************************************
     
 game id(XEKwcxqZBI5) with:ingame status
+-------------- make a match/ Custom --------------
+player: ali
+game id(Bv58@Ko7b6h) with:lobby status
+game id(Bv58@Ko7b6h) with:lobby status
+-------------- make a match/ Custom --------------
+player: ali
+ReadySignal: [0] by: [DpnSw16cV1CrbROLAAAB] in: [AIkClVFCciK]
+/////////////////////// Game State: LOBBY /////////////////////////
+
+    ************************** stage: 0,idle ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+ReadySignal: [0] by: [DpnSw16cV1CrbROLAAAB] in: [AIkClVFCciK]
+^^^^^^^^^^^^^^^^ Game State: INGAME[AIkClVFCciK] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_Zcgzrb: Offline - id[6208c0d7ca13c0181cc99e3b]
+⌊____[2] player_Awawx2: Offline - id[6208c0d8ab85e48b1a260897]
+⌊____[3] player_J6dejo: Offline - id[6208c0d9ee15fc1198b98c87]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [402,412,410,112]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[AIkClVFCciK] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_Zcgzrb: Offline - id[6208c0d7ca13c0181cc99e3b]
+⌊____[2] player_Awawx2: Offline - id[6208c0d8ab85e48b1a260897]
+⌊____[3] player_J6dejo: Offline - id[6208c0d9ee15fc1198b98c87]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [114,210,312,203]
+    [+]ruler:[0] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:2
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[AIkClVFCciK] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_Zcgzrb: Offline - id[6208c0d7ca13c0181cc99e3b]
+⌊____[2] player_Awawx2: Offline - id[6208c0d8ab85e48b1a260897]
+⌊____[3] player_J6dejo: Offline - id[6208c0d9ee15fc1198b98c87]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:102,412,403,211,407
+    [+]Player 1:307,408,202,409,106
+    [+]Player 2:413,406,214,303,113
+    [+]Player 3:306,107,410,414,305
+    ****************************************************************************
+    
+
+stage triggered by player number:[0]
+^^^^^^^^^^^^^^^^ Game State: INGAME[AIkClVFCciK] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_Zcgzrb: Offline - id[6208c0d7ca13c0181cc99e3b]
+⌊____[2] player_Awawx2: Offline - id[6208c0d8ab85e48b1a260897]
+⌊____[3] player_J6dejo: Offline - id[6208c0d9ee15fc1198b98c87]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:0, cd:214} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[0] - hokm:[200] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:102,412,403,211,407
+    [+]Player 1:307,408,202,409,106
+    [+]Player 2:413,406,214,303,113
+    [+]Player 3:306,107,410,414,305
+    ****************************************************************************
+    
+-------------- make a match/ Custom --------------
+player: ali
+ReadySignal: [0] by: [6kRhT_pjoEQFSpJzAAAB] in: [GYCJJ8nWdrs]
+/////////////////////// Game State: LOBBY /////////////////////////
+
+    ************************** stage: 0,idle ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+ReadySignal: [0] by: [6kRhT_pjoEQFSpJzAAAB] in: [GYCJJ8nWdrs]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [406,402,308,407]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[0] - next player:[0]
+    [+]Cards on the ground: [107,108,207,307]
+    [+]ruler:[-1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:1
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 1,decide the ruler ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [111,414,413,205]
+    [+]ruler:[1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[3000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:
+    [+]Player 1:
+    [+]Player 2:
+    [+]Player 3:
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:0 - stage:2
+cards:[]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 2,send first 5 sets of cards ****************************
+    [+]data: {pn:-1, cd:-1} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[1] - hokm:[0] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:410,313,408,211,207
+    [+]Player 1:311,203,409,110,214
+    [+]Player 2:306,205,403,404,307
+    [+]Player 3:202,302,108,213,206
+    ****************************************************************************
+    
+AI Decide:(311)
+cards length:5 - stage:3
+cards:[311,203,409,110,214]
+hands:[]
+hokms:[]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 3,decide the hokm ****************************
+    [+]data: {pn:1, cd:311} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[1] - hokm:[300] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:410,313,408,211,207
+    [+]Player 1:311,203,409,110,214
+    [+]Player 2:306,205,403,404,307
+    [+]Player 3:202,302,108,213,206
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:5 - stage:4
+cards:[311,203,409,110,214]
+hands:[]
+hokms:[311]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 4,send cards 4 by 4 ****************************
+    [+]data: {pn:1, cd:0} - msg:[] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[1] - hokm:[300] - hand:[0]
+    [+]cards index:[0] - timeout:[5000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:410,313,408,211,207,105,112,111,103
+    [+]Player 1:311,203,409,110,214,106,406,412,304
+    [+]Player 2:306,205,403,404,307,114,109,107,209
+    [+]Player 3:202,302,108,213,206,212,405,414,312
+    ****************************************************************************
+    
+AI Decide:(0)
+cards length:9 - stage:4
+cards:[311,203,409,110,214,106,406,412,304]
+hands:[]
+hokms:[311,304]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:0} - msg:[OK4] 
+    [+]played player:[1] - next player:[1]
+    [+]Cards on the ground: [0,0,0,0]
+    [+]ruler:[1] - hokm:[300] - hand:[0]
+    [+]cards index:[0] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:410,313,408,211,207,105,112,111,103,204,411,402,104
+    [+]Player 1:311,203,409,110,214,106,406,412,304,310,102,113,303
+    [+]Player 2:306,205,403,404,307,114,109,107,209,305,308,210,407
+    [+]Player 3:202,302,108,213,206,212,405,414,312,309,208,413,314
+    ****************************************************************************
+    
+AI Decide:(310)
+cards length:13 - stage:5
+cards:[311,203,409,110,214,106,406,412,304,310,102,113,303]
+hands:[]
+hokms:[311,304,310,303]
+^^^^^^^^^^^^^^^^ Game State: INGAME[GYCJJ8nWdrs] ^^^^^^^^^^^^^^^^^
+[*]Players Status:
+⌊____[0] ali: Live - id[61d0713656c0a94d6ca7e662]
+⌊____[1] player_B5knae: Offline - id[6208c21afbcecfdf6979e999]
+⌊____[2] player_U1mg5k: Offline - id[6208c21ffc3c79ae0fb511c7]
+⌊____[3] player_Vepnz3: Offline - id[6208c224df42bcc3d84987e3]
+
+    ************************** stage: 5,paly the cards ****************************
+    [+]data: {pn:1, cd:310} - msg:[] 
+    [+]played player:[1] - next player:[2]
+    [+]Cards on the ground: [0,310,0,0]
+    [+]ruler:[1] - hokm:[300] - hand:[300]
+    [+]cards index:[1] - timeout:[60000]
+    [+]team counts: team0:[0] - team1:[0]
+    [+]team Scores: team0:[0] - team1:[0]
+    [+]Player 0:410,313,408,211,207,105,112,111,103,204,411,402,104
+    [+]Player 1:311,203,409,110,214,106,406,412,304,102,113,303
+    [+]Player 2:306,205,403,404,307,114,109,107,209,305,308,210,407
+    [+]Player 3:202,302,108,213,206,212,405,414,312,309,208,413,314
+    ****************************************************************************
+    
